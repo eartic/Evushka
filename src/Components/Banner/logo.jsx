@@ -1,14 +1,17 @@
-import React from 'react'
-import Logo from '/src/assets/logo.png'
+import React from 'react';
+import LogoImage from '/src/assets/logo.png';
+import { div } from 'framer-motion/client';
 
-const logo = () => {
-  return (
-    <>
-    <div className='flex justify-center m-1 min-w-fit max-v-fit animate-fade-left animate-ease-in-out'>
-        <img src={Logo} alt="logo banner" />
+const Logo = () => {
+  return (<>
+    <div>
+      <p className='absolute bottom-0 top-12 text-center text-black text-l'> Plesna igraonica & rođendaonica </p>
+      </div>
+    <div className='flex justify-center mt-4'>
+      <img src={LogoImage} alt="logo banner" className='max-w-80 h-auto' />
     </div>
     </>
-  )
+  );
 }
 
-export default logo
+export default Logo;
