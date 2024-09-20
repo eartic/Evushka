@@ -3,6 +3,11 @@ import LogoImage from '/src/Components/Banner/logo.jsx';
 import Navbar from '../Navbar/Navbar.jsx';
 import { motion } from 'framer-motion';
 import './Naslovna.css';
+import Djeca from '/src/assets/logo_djeca.jpg';
+import { Link } from "@react-email/components";
+import TerminiCorusel from '../Termini_slide_show/termini_s_s.jsx';
+
+
 
 const circleVariants = {
   initial: { scale: 1, opacity: 1 },
@@ -13,41 +18,101 @@ const circleVariants = {
   },
 };
 
+{/*mail constanta za slanje maila na info@evushka.com */}
+const EmailLink = () => {
+  const handleClick = () => {
+    window.location.href = 'mailto:info@evushka.com';
+  };
+
+  return (
+    <p onClick={handleClick} style={{ cursor: 'pointer', color: 'darkmagenta', textDecoration: 'none', fontSize:'15px' }}>
+      info@evushka.com
+    </p>
+  );
+};
+
+const PhoneLink = () => {
+  const handleClick = () => {
+    window.location.href = 'tel:+385995913887';
+  };
+
+  return (
+    <p onClick={handleClick} style={{ cursor: 'pointer', color: 'darkmagenta', textDecoration: 'none', fontSize: '15px' }}>
+      099 591 3887
+    </p>
+  );
+};
+
 const Naslovna = () => {
   const labels = [
-    'Jutarnja čuvaonica za djecu',
     'Plesna rekreacija za djecu',
     'Tečaj društvenih plesova za odrasle',
     'Ladies latin',
     'Individualna poduka',
     'Team building',
-    'Najam',
-  ];
+    'Kutak za mladence',
+    'Rođendani',
+    'Jutarnja čuvaonica za djecu',
+    'Najam prostora',
+  ]; 
 
   return (
     <>
       <LogoImage />
       <Navbar />
-      <div className="mt-10 mb-6">
+      <div className='flex justify-center items-center w-full h-auto py-3'>
+        <div className='w-5/6 sm:w-1/2 md:w-1/3 h-5/6'>
+          <img src={Djeca} alt="logo sa slikom djece" className='w-full h-auto' />
+          <div className='flex items-center justify-items-center box-border '>
+      <p className='uvodniParagraph text-lg text-pretty text-center'>Plešite s nama i proslavite rođendan svog djeteta kod nas!</p>     
+      </div>
+      </div>
+      </div>
+    
+      <div className="mt-2 mb-6">
         {/* Circle Grid Section */}
         <div className="flex justify-center items-center mb-8">
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-7 gap-4 md:gap-6">
+          <div className="grid grid-cols-3 sm:grid-cols-2 md:grid-cols-7 gap-4 xl:grid-cols-9 "> {/* treba provjeriti i sloziti responzivnost za ostale device koje su >940px */}
             {labels.map((label, index) => (
               <motion.div
                 key={index}
-                className="flex justify-center items-center w-32 h-32 md:w-44 md:h-44 rounded-full bg-magenta-500"
+                className="flex justify-center items-center xl:w-32 xl:h-32 w-32 h-32 md:w-44 md:h-44 rounded-full bg-magenta-500"
                 variants={circleVariants}
                 initial="initial"
                 whileHover="hover"
               >
-                <div className="flex justify-center items-center w-28 h-28 md:w-40 md:h-40 rounded-full bg-white text-center text-xl font-suse text-black">
+                <div className="flex justify-center items-center xl:w-28 xl:h-28 w-28 h-28 md:w-40 md:h-40 rounded-full bg-white text-center text-sm font-medium text-black">
                   {label}
                 </div>
               </motion.div>
             ))}
           </div>
         </div>
-      </div>
+      </div> {/*Navigacija krugovi*/}
+
+    <div className='ml-1 mt-10 p-3'>
+    <div className='grid grid-cols-3 w-full h-auto'>
+     <div className='block justify-center justify-items-center'>
+     <h2 className='text-center font-semibold text-xl'>Radno vrijeme:<br/></h2>
+            <p className='text-center'>Ponedjeljak - Petak: <br/>8:30 - 22:00 <br/>
+            Subota - Nedjelja:<br/> 9:00 - 21:00 </p>
+            
+     </div>
+     <div  className='flex justify-center'>
+        <h2 className='text-center font-semibold text-xl'>
+          Kontakt: <br/> <EmailLink />
+       </h2></div>
+     <div  className='flex justify-center'>
+      <h2 className='text-center font-semibold text-xl'>
+      Kontakt telefon:
+      <br />
+      <PhoneLink/>
+      </h2></div>
+    </div>
+    </div>    {/*Kontakt radno vrijeme */}
+
+              {/*Aktualni termini slid shwo link*/}
+    <TerminiCorusel />
     </>
   );
 };

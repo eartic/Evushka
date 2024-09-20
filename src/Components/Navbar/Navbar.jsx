@@ -23,7 +23,7 @@ export default function Navbar() {
 
         {/* Desktop Menu */}
         <div className="hidden md:flex space-x-8 p-2">
-          {['Naslovna', 'Ples', 'Kutak za mladence', 'Jutarnja čuvaonica za djecu', 'Najam', 'Pravilnik', 'Kontakt'].map((item, index) => (
+          {['Naslovna', 'Ples', 'Kutak za mladence','Rođendani', 'Jutarnja čuvaonica za djecu', 'Najam', 'Pravilnik', 'Kontakt'].map((item, index) => (
             <motion.a
               key={index}
               href={`#${item.toLowerCase().replace(/ /g, '')}`}
