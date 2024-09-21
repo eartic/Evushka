@@ -122,8 +122,6 @@ const Naslovna = () => {
   </div>
 </div>
 
-
-
               {/*Aktualni termini slid shwo link*/}
               <section><div className='flex justify-center justify-items-center'>
                 <h1 className='text-center'>Aktualni termini</h1>
@@ -146,7 +144,7 @@ const Naslovna = () => {
               whileHover="hover"
             >
               {/* Ubaci svoju Facebook ikonu ovdje */}
-              <img src="./public/link_facebook.png" alt="Facebook" className="w-12 h-auto" />
+              <img src="public\link_facebook.png" alt="Facebook" className="w-12 h-auto" />
             </motion.a>
             <motion.a
               href="https://www.instagram.com"
@@ -158,7 +156,7 @@ const Naslovna = () => {
               whileHover="hover"
             >
               {/* Ubaci svoju Instagram ikonu ovdje */}
-              <img src="./public/link_instagram.png" alt="Instagram" className="w-12 h-auto" />
+              <img src="public\link_instagram.png" alt="Instagram" className="w-12 h-auto" />
             </motion.a>
           </div>
         </div>
