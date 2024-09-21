@@ -6,7 +6,12 @@ import './Naslovna.css';
 import Djeca from '/src/assets/logo_djeca.jpg';
 import { Link } from "@react-email/components";
 import TerminiCorusel from '../Termini_slide_show/termini_s_s.jsx';
-
+import Prostor1 from '/src/assets/prostor/Prostor1.jpg';
+import Prostor2 from '/src/assets/prostor/Prostor2.png';
+import Prostor3 from '/src/assets/prostor/Prostor3.png';
+import Prostor4 from '/src/assets/prostor/Prostor4.png';
+import Prostor5 from '/src/assets/prostor/Prostor5.png';
+import Prostor6 from '/src/assets/prostor/Prostor6.png';
 
 
 const circleVariants = {
@@ -161,6 +166,31 @@ const Naslovna = () => {
           </div>
         </div>
       </section>
+
+      {/*galerija slika*/}
+      
+
+<div class="grid grid-cols-2 md:grid-cols-3 gap-4 mt-10 p-10">
+    <div>
+        <img class="h-auto max-w-full rounded-lg" src={Prostor1} alt="" />
+    </div>
+    <div>
+        <img class="h-auto max-w-full rounded-lg" src={Prostor2} alt=""/>
+    </div>
+    <div>
+        <img class="h-auto max-w-full rounded-lg" src={Prostor3} alt=""/>
+    </div>
+    <div>
+        <img class="h-auto max-w-full rounded-lg" src={Prostor4} alt=""/>
+    </div>
+    <div>
+        <img class="h-auto max-w-full rounded-lg" src={Prostor5} alt=""/>
+    </div>
+    <div>
+        <img class="h-auto max-w-full rounded-lg" src={Prostor6} alt=""/>
+    </div>
+</div>
+
     </>
   );
 };
