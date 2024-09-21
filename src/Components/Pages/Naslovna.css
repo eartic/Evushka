@@ -1,7 +1,41 @@
+/*ako imamo gje da bi mogli dodati citat ili neku posebnu recenicu*/
 .uvodniParagraph { 
     font-family: "Dancing Script", cursive;
     font-optical-sizing: auto;
     font-weight: 700;
     font-style: normal;
+    font-size: xx-large;
+}
+
+/*vecina h2 texta*/
+.podnaslov{
+    font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+/*font koji je ce se koristiti u svrhu navigacije */
+.navigacija{
+    font-size: medium;
+    font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+/*fontovi za ostatak teksta koji se siri stranicom kako bi se dobila konstana*/
+.ostatakTexta{
+
+    font-size: medium;
+    font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+
+}
+h1{
     font-size: x-large;
+    font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
 }

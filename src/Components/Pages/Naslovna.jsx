@@ -25,7 +25,7 @@ const EmailLink = () => {
   };
 
   return (
-    <p onClick={handleClick} style={{ cursor: 'pointer', color: 'darkmagenta', textDecoration: 'none', fontSize:'15px' }}>
+    <p className='ostatakTexta' onClick={handleClick} style={{ cursor: 'pointer', color: 'darkmagenta', textDecoration: 'none' }}>
       info@evushka.com
     </p>
   );
@@ -37,7 +37,7 @@ const PhoneLink = () => {
   };
 
   return (
-    <p onClick={handleClick} style={{ cursor: 'pointer', color: 'darkmagenta', textDecoration: 'none', fontSize: '15px' }}>
+    <p className='ostatakTexta' onClick={handleClick} style={{ cursor: 'pointer', color: 'darkmagenta', textDecoration: 'none', fontSize: '15px' }}>
       099 591 3887
     </p>
   );
@@ -68,7 +68,7 @@ const Naslovna = () => {
       </div>
       </div>
       </div>
-    
+    {/*Navigacija krugovi*/}
       <div className="mt-2 mb-6">
         {/* Circle Grid Section */}
         <div className="flex justify-center items-center mb-8">
@@ -81,38 +81,78 @@ const Naslovna = () => {
                 initial="initial"
                 whileHover="hover"
               >
-                <div className="flex justify-center items-center xl:w-28 xl:h-28 w-28 h-28 md:w-40 md:h-40 rounded-full bg-white text-center text-sm font-medium text-black">
+                <div className="flex justify-center items-center xl:w-28 xl:h-28 w-28 h-28 md:w-40 md:h-40 rounded-full bg-white text-center navigacija"> {/*text-sm font-medium text-black*/}
                   {label}
                 </div>
               </motion.div>
             ))}
           </div>
         </div>
-      </div> {/*Navigacija krugovi*/}
+      </div> 
 
+            {/*Kontakt radno vrijeme */}
     <div className='ml-1 mt-10 p-3'>
-    <div className='grid grid-cols-3 w-full h-auto'>
+    <div className='grid gap-2 grid-cols-3 w-full h-auto'>
      <div className='block justify-center justify-items-center'>
-     <h2 className='text-center font-semibold text-xl'>Radno vrijeme:<br/></h2>
-            <p className='text-center'>Ponedjeljak - Petak: <br/>8:30 - 22:00 <br/>
-            Subota - Nedjelja:<br/> 9:00 - 21:00 </p>
-            
-     </div>
-     <div  className='flex justify-center'>
-        <h2 className='text-center font-semibold text-xl'>
-          Kontakt: <br/> <EmailLink />
-       </h2></div>
-     <div  className='flex justify-center'>
-      <h2 className='text-center font-semibold text-xl'>
-      Kontakt telefon:
-      <br />
-      <PhoneLink/>
+          <h2 className='text-center podnaslov'>
+              Radno vrijeme:<br/></h2>
+            <p className='text-center ostatakTexta'>
+              Ponedjeljak - Petak: <br/>8:30 - 22:00 <br/>
+              Subota - Nedjelja:<br/> 9:00 - 21:00 </p> 
+      </div>
+        <div  className='flex justify-center'>
+          <h2 className='text-center podnaslov'>
+            Kontakt: <br/> <EmailLink />
+          </h2>
+          </div>
+      <div  className='flex justify-center'>
+        <h2 className='text-center podnaslov'>
+        Kontakt telefon:
+        <br />
+        <PhoneLink/>
       </h2></div>
-    </div>
-    </div>    {/*Kontakt radno vrijeme */}
+      </div>
+    </div>    
 
               {/*Aktualni termini slid shwo link*/}
-    <TerminiCorusel />
+              <section><div className='flex justify-center justify-items-center'>
+                <h1 className='text-center'>Aktualni termini</h1>
+                </div>
+                  <TerminiCorusel />
+              </section>
+
+              {/* Podnaslov "Pratite nas" */}
+      <section className='mt-10'>
+        <h2 className='text-center podnaslov'>Pratite nas</h2>
+        <div className="flex justify-center items-center mt-6">
+          <div className="grid grid-cols-2 gap-4">
+            <motion.a
+              href="https://www.facebook.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-28 h-28 rounded-full bg-magenta-500 flex justify-center items-center"  /*rjesi responzivnost za small deivces i md*/
+              variants={circleVariants}
+              initial="initial"
+              whileHover="hover"
+            >
+              {/* Ubaci svoju Facebook ikonu ovdje */}
+              <img src="./public/link_facebook.png" alt="Facebook" className="w-20 h-auto" />
+            </motion.a>
+            <motion.a
+              href="https://www.instagram.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-16 h-16 rounded-full bg-magenta-500 flex justify-center items-center"
+              variants={circleVariants}
+              initial="initial"
+              whileHover="hover"
+            >
+              {/* Ubaci svoju Instagram ikonu ovdje */}
+              <img src="./public/link_instagram.png" alt="Instagram" className="w-10 h-10" />
+            </motion.a>
+          </div>
+        </div>
+      </section>
     </>
   );
 };
