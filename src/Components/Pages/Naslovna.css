@@ -39,3 +39,14 @@ h1{
   font-weight: 700;
   font-style: normal;
 }
+
+@media (max-width: 768px) {
+  .grid_kolona {
+    grid-template-columns: 1fr; /* Make it a single column on small screens */
+  }
+  .grid_kolona > div {
+    margin-bottom: 1rem; /* Optional: Add spacing between items */
+  }
+}
+
+

@@ -91,28 +91,38 @@ const Naslovna = () => {
       </div> 
 
             {/*Kontakt radno vrijeme */}
-    <div className='ml-1 mt-10 p-3'>
-    <div className='grid gap-2 grid-cols-3 w-full h-auto'>
-     <div className='block justify-center justify-items-center'>
-          <h2 className='text-center podnaslov'>
-              Radno vrijeme:<br/></h2>
-            <p className='text-center ostatakTexta'>
-              Ponedjeljak - Petak: <br/>8:30 - 22:00 <br/>
-              Subota - Nedjelja:<br/> 9:00 - 21:00 </p> 
-      </div>
-        <div  className='flex justify-center'>
-          <h2 className='text-center podnaslov'>
-            Kontakt: <br/> <EmailLink />
-          </h2>
-          </div>
-      <div  className='flex justify-center'>
-        <h2 className='text-center podnaslov'>
-        Kontakt telefon:
-        <br />
-        <PhoneLink/>
-      </h2></div>
-      </div>
-    </div>    
+            <div className='ml-1 mt-10 p-3'>
+  <div className='grid grid_kolona gap-2 grid-cols-1 md:grid-cols-3 w-full h-auto'>
+    
+    {/* Radno vrijeme Section */}
+    <div className='flex flex-col items-center text-center'>
+      <h2 className='podnaslov'>
+        Radno vrijeme:<br />
+      </h2>
+      <p className='ostatakTexta'>
+        Ponedjeljak - Petak: <br />8:30 - 22:00 <br />
+        Subota - Nedjelja:<br /> 9:00 - 21:00
+      </p>
+    </div>
+
+    {/* Kontakt Section */}
+    <div className='flex flex-col items-center text-center'>
+      <h2 className='podnaslov'>
+        Kontakt: <br /> <EmailLink />
+      </h2>
+    </div>
+
+    {/* Kontakt telefon Section */}
+    <div className='flex flex-col items-center text-center'>
+      <h2 className='podnaslov'>
+        Kontakt telefon:<br />
+        <PhoneLink />
+      </h2>
+    </div>
+  </div>
+</div>
+
+
 
               {/*Aktualni termini slid shwo link*/}
               <section><div className='flex justify-center justify-items-center'>
@@ -123,32 +133,32 @@ const Naslovna = () => {
 
               {/* Podnaslov "Pratite nas" */}
       <section className='mt-10'>
-        <h2 className='text-center podnaslov'>Pratite nas</h2>
+        <h1 className='text-center podnaslov'>Pratite nas</h1>
         <div className="flex justify-center items-center mt-6">
           <div className="grid grid-cols-2 gap-4">
             <motion.a
               href="https://www.facebook.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-28 h-28 rounded-full bg-magenta-500 flex justify-center items-center"  /*rjesi responzivnost za small deivces i md*/
+              className="w-20 h-20 rounded-full bg-magenta-500 flex justify-center items-center"  /*rjesi responzivnost za small deivces i md*/
               variants={circleVariants}
               initial="initial"
               whileHover="hover"
             >
               {/* Ubaci svoju Facebook ikonu ovdje */}
-              <img src="./public/link_facebook.png" alt="Facebook" className="w-20 h-auto" />
+              <img src="./public/link_facebook.png" alt="Facebook" className="w-12 h-auto" />
             </motion.a>
             <motion.a
               href="https://www.instagram.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-16 h-16 rounded-full bg-magenta-500 flex justify-center items-center"
+              className="w-20 h-20 rounded-full bg-magenta-500 flex justify-center items-center"
               variants={circleVariants}
               initial="initial"
               whileHover="hover"
             >
               {/* Ubaci svoju Instagram ikonu ovdje */}
-              <img src="./public/link_instagram.png" alt="Instagram" className="w-10 h-10" />
+              <img src="./public/link_instagram.png" alt="Instagram" className="w-12 h-auto" />
             </motion.a>
           </div>
         </div>
