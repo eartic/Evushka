@@ -14,6 +14,7 @@ import Prostor5 from '/src/assets/prostor/Prostor5.png';
 import Prostor6 from '/src/assets/prostor/Prostor6.png';
 import Facebook from '/public/link_facebook.png';
 import Instagram from '/public/link_instagram.png';
+import Footer from '/src/Components/Footer/Footer.jsx';
 
 const EmailLink = () => {
   const handleClick = () => {
@@ -161,6 +162,7 @@ const Naslovna = () => {
           <img src={selectedImage} alt="Enlarged" className="max-w-full max-h-full" />
         </div>
       )}
+      <Footer/>
     </>
   );
 };
