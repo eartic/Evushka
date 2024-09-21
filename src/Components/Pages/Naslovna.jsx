@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import LogoImage from '/src/Components/Banner/logo.jsx';
 import Navbar from '../Navbar/Navbar.jsx';
 import { motion } from 'framer-motion';
@@ -12,18 +12,9 @@ import Prostor3 from '/src/assets/prostor/Prostor3.png';
 import Prostor4 from '/src/assets/prostor/Prostor4.png';
 import Prostor5 from '/src/assets/prostor/Prostor5.png';
 import Prostor6 from '/src/assets/prostor/Prostor6.png';
+import Facebook from '/public/link_facebook.png';
+import Instagram from '/public/link_instagram.png';
 
-
-const circleVariants = {
-  initial: { scale: 1, opacity: 1 },
-  hover: {
-    scale: 1.3,
-    opacity: 0.9,
-    transition: { type: 'spring', stiffness: 300, damping: 15 },
-  },
-};
-
-{/*mail constanta za slanje maila na info@evushka.com */}
 const EmailLink = () => {
   const handleClick = () => {
     window.location.href = 'mailto:info@evushka.com';
@@ -49,6 +40,7 @@ const PhoneLink = () => {
 };
 
 const Naslovna = () => {
+  const [selectedImage, setSelectedImage] = useState(null);
   const labels = [
     'Plesna rekreacija za djecu',
     'Tečaj društvenih plesova za odrasle',
@@ -59,7 +51,15 @@ const Naslovna = () => {
     'Rođendani',
     'Jutarnja čuvaonica za djecu',
     'Najam prostora',
-  ]; 
+  ];
+
+  const handleImageClick = (src) => {
+    setSelectedImage(src);
+  };
+
+  const closeModal = () => {
+    setSelectedImage(null);
+  };
 
   return (
     <>
@@ -68,73 +68,58 @@ const Naslovna = () => {
       <div className='flex justify-center items-center w-full h-auto py-3'>
         <div className='w-5/6 sm:w-1/2 md:w-1/3 h-5/6'>
           <img src={Djeca} alt="logo sa slikom djece" className='w-full h-auto' />
-          <div className='flex items-center justify-items-center box-border '>
-      <p className='uvodniParagraph text-lg text-pretty text-center'>Plešite s nama i proslavite rođendan svog djeteta kod nas!</p>     
+          <div className='flex items-center justify-items-center box-border'>
+            <p className='uvodniParagraph text-lg text-pretty text-center'>Plešite s nama i proslavite rođendan svog djeteta kod nas!</p>
+          </div>
+        </div>
       </div>
-      </div>
-      </div>
-    {/*Navigacija krugovi*/}
+
+      {/* Navigacija krugovi */}
       <div className="mt-2 mb-6">
-        {/* Circle Grid Section */}
         <div className="flex justify-center items-center mb-8">
-          <div className="grid grid-cols-3 sm:grid-cols-2 md:grid-cols-7 gap-4 xl:grid-cols-9 "> {/* treba provjeriti i sloziti responzivnost za ostale device koje su >940px */}
+          <div className="grid grid-cols-3 sm:grid-cols-2 md:grid-cols-7 gap-4 xl:grid-cols-9">
             {labels.map((label, index) => (
               <motion.div
                 key={index}
                 className="flex justify-center items-center xl:w-32 xl:h-32 w-32 h-32 md:w-44 md:h-44 rounded-full bg-magenta-500"
-                variants={circleVariants}
+                variants={{ initial: { scale: 1, opacity: 1 }, hover: { scale: 1.3, opacity: 0.9, transition: { type: 'spring', stiffness: 300, damping: 15 } } }}
                 initial="initial"
                 whileHover="hover"
               >
-                <div className="flex justify-center items-center xl:w-28 xl:h-28 w-28 h-28 md:w-40 md:h-40 rounded-full bg-white text-center navigacija"> {/*text-sm font-medium text-black*/}
+                <div className="flex justify-center items-center xl:w-28 xl:h-28 w-28 h-28 md:w-40 md:h-40 rounded-full bg-white text-center navigacija">
                   {label}
                 </div>
               </motion.div>
             ))}
           </div>
         </div>
-      </div> 
+      </div>
 
-            {/*Kontakt radno vrijeme */}
-            <div className='ml-1 mt-10 p-3'>
-  <div className='grid grid_kolona gap-2 grid-cols-1 md:grid-cols-3 w-full h-auto'>
-    
-    {/* Radno vrijeme Section */}
-    <div className='flex flex-col items-center text-center'>
-      <h2 className='podnaslov'>
-        Radno vrijeme:<br />
-      </h2>
-      <p className='ostatakTexta'>
-        Ponedjeljak - Petak: <br />8:30 - 22:00 <br />
-        Subota - Nedjelja:<br /> 9:00 - 21:00
-      </p>
-    </div>
+      {/* Kontakt radno vrijeme */}
+      <div className='ml-1 mt-10 p-3'>
+        <div className='grid gap-2 grid-cols-1 md:grid-cols-3 w-full h-auto'>
+          <div className='flex flex-col items-center text-center'>
+            <h2 className='podnaslov'>Radno vrijeme:<br /></h2>
+            <p className='ostatakTexta'>Ponedjeljak - Petak: <br />8:30 - 22:00 <br />Subota - Nedjelja:<br /> 9:00 - 21:00</p>
+          </div>
+          <div className='flex flex-col items-center text-center'>
+            <h2 className='podnaslov'>Kontakt: <br /> <EmailLink /></h2>
+          </div>
+          <div className='flex flex-col items-center text-center'>
+            <h2 className='podnaslov'>Kontakt telefon:<br /><PhoneLink /></h2>
+          </div>
+        </div>
+      </div>
 
-    {/* Kontakt Section */}
-    <div className='flex flex-col items-center text-center'>
-      <h2 className='podnaslov'>
-        Kontakt: <br /> <EmailLink />
-      </h2>
-    </div>
+      {/* Aktualni termini slid show link */}
+      <section>
+        <div className='flex justify-center justify-items-center'>
+          <h1 className='text-center'>Aktualni termini</h1>
+        </div>
+        <TerminiCorusel />
+      </section>
 
-    {/* Kontakt telefon Section */}
-    <div className='flex flex-col items-center text-center'>
-      <h2 className='podnaslov'>
-        Kontakt telefon:<br />
-        <PhoneLink />
-      </h2>
-    </div>
-  </div>
-</div>
-
-              {/*Aktualni termini slid shwo link*/}
-              <section><div className='flex justify-center justify-items-center'>
-                <h1 className='text-center'>Aktualni termini</h1>
-                </div>
-                  <TerminiCorusel />
-              </section>
-
-              {/* Podnaslov "Pratite nas" */}
+      {/* Podnaslov "Pratite nas" */}
       <section className='mt-10'>
         <h1 className='text-center podnaslov'>Pratite nas</h1>
         <div className="flex justify-center items-center mt-6">
@@ -143,54 +128,39 @@ const Naslovna = () => {
               href="https://www.facebook.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-20 h-20 rounded-full bg-magenta-500 flex justify-center items-center"  /*rjesi responzivnost za small deivces i md*/
-              variants={circleVariants}
-              initial="initial"
-              whileHover="hover"
+              className="w-20 h-20 rounded-full bg-magenta-500 flex justify-center items-center"
+              whileHover={{ scale: 1.1 }}
             >
-              {/* Ubaci svoju Facebook ikonu ovdje */}
-              <img src="public\link_facebook.png" alt="Facebook" className="w-12 h-auto" />
+              <img src={Facebook} alt="Facebook" className="w-12 h-auto" />
             </motion.a>
             <motion.a
               href="https://www.instagram.com"
               target="_blank"
               rel="noopener noreferrer"
               className="w-20 h-20 rounded-full bg-magenta-500 flex justify-center items-center"
-              variants={circleVariants}
-              initial="initial"
-              whileHover="hover"
+              whileHover={{ scale: 1.1 }}
             >
-              {/* Ubaci svoju Instagram ikonu ovdje */}
-              <img src="public\link_instagram.png" alt="Instagram" className="w-12 h-auto" />
+              <img src={Instagram} alt="Instagram" className="w-12 h-auto" />
             </motion.a>
           </div>
         </div>
       </section>
 
-      {/*galerija slika*/}
-      
+      {/* Galerija slika */}
+      <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mt-10 p-10">
+        {[Prostor1, Prostor2, Prostor3, Prostor4, Prostor5, Prostor6].map((src, index) => (
+          <div key={index} onClick={() => handleImageClick(src)}>
+            <img className="h-auto max-w-full rounded-lg cursor-pointer" src={src} alt="" />
+          </div>
+        ))}
+      </div>
 
-<div class="grid grid-cols-2 md:grid-cols-3 gap-4 mt-10 p-10">
-    <div>
-        <img class="h-auto max-w-full rounded-lg" src={Prostor1} alt="" />
-    </div>
-    <div>
-        <img class="h-auto max-w-full rounded-lg" src={Prostor2} alt=""/>
-    </div>
-    <div>
-        <img class="h-auto max-w-full rounded-lg" src={Prostor3} alt=""/>
-    </div>
-    <div>
-        <img class="h-auto max-w-full rounded-lg" src={Prostor4} alt=""/>
-    </div>
-    <div>
-        <img class="h-auto max-w-full rounded-lg" src={Prostor5} alt=""/>
-    </div>
-    <div>
-        <img class="h-auto max-w-full rounded-lg" src={Prostor6} alt=""/>
-    </div>
-</div>
-
+      {/* Modal za uvećanje slika */}
+      {selectedImage && (
+        <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-75 z-50" onClick={closeModal}>
+          <img src={selectedImage} alt="Enlarged" className="max-w-full max-h-full" />
+        </div>
+      )}
     </>
   );
 };
