@@ -67,7 +67,7 @@ const Naslovna = () => {
       <LogoImage />
       <Navbar />
       <div className='flex justify-center items-center w-full h-auto py-3'>
-        <div className='w-5/6 sm:w-1/2 md:w-1/3 h-5/6'>
+        <div className='w-5/6 sm:w-1/2 md:w-1/3 xs:h-5/6'>
           <img src={Djeca} alt="logo sa slikom djece" className='w-full h-auto' />
           <div className='flex items-center justify-items-center box-border'>
             <p className='uvodniParagraph text-lg text-pretty text-center'>Plešite s nama i proslavite rođendan svog djeteta kod nas!</p>
@@ -78,7 +78,7 @@ const Naslovna = () => {
       {/* Navigacija krugovi */}
       <div className="mt-2 mb-6">
         <div className="flex justify-center items-center mb-8">
-          <div className="grid grid-cols-3 sm:grid-cols-2 md:grid-cols-7 gap-4 xl:grid-cols-9">
+          <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-4 xl:grid-cols-9">
             {labels.map((label, index) => (
               <Link to={`/${label.toLowerCase().replace(/ /g, '')}`} key={index}>
                 <motion.div
