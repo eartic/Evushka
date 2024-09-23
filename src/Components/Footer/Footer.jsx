@@ -26,7 +26,7 @@ const Footer = () => {
             Pon-Pet: 8:30-22:00 <br />
             Sub-Ned: 9-21
           </p>
-          <img src={Sat} alt="Clock" className="w-12 h-12" />
+          <img src={Sat} alt="Clock" className="w-9 h-9" />
         </div>
 
             {/*Kontakt mail*/}
@@ -35,7 +35,7 @@ const Footer = () => {
               Kontakt: <br />
               info@evushka.com
               </p>
-              <a href="mailto:info@evushka.com" className="w-16 h-16">
+              <a href="mailto:info@evushka.com" className="w-12 h-12">
             <img src={LogoMail} alt="Email" />
           </a>
             </div>
@@ -46,7 +46,7 @@ const Footer = () => {
               Kontakt telefon: <br />
               099 591 3887
               </p>
-              <a href="tel:+385995913887"className="w-16 h-16">
+              <a href="tel:+385995913887"className="w-12 h-12">
             <img src={Phone} alt="Phone" />
           </a>
             </div>
@@ -58,7 +58,7 @@ const Footer = () => {
     href="https://www.google.com/maps/place/Papageno/@45.7681864,15.9412868,19z/data=!3m1!4b1!4m6!3m5!1s0x4765d43ba5618d1b:0x38fe4890afd53550!8m2!3d45.7681864!4d15.9419305!16s%2Fg%2F1tg2c8sh?entry=ttu&g_ep=EgoyMDI0MDkxOC4xIKXMDSoASAFQAw%3D%3D&utm_medium=s2email&shorturl=1"
   target="_blank" 
   rel="noopener noreferrer" 
-  className="w-16 h-16"
+  className="w-12 h-12"
 >
   <img src={Map} alt="Google Maps" />
 </a>

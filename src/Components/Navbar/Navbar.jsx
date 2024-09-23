@@ -1,10 +1,10 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom'; // Dodaj ovaj import
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
-  // Variants for hover animation
   const hoverVariants = {
     hover: {
       scale: 1.1,
@@ -20,22 +20,19 @@ export default function Navbar() {
   return (
     <nav className="sticky top-0 z-50 bg-magenta-500 p-4">
       <div className="container mx-auto flex justify-center items-center bg-white rounded-full p-4">
-
         {/* Desktop Menu */}
         <div className="hidden md:flex space-x-8 p-2">
           {['Naslovna', 'Ples', 'Kutak za mladence', 'Rođendani', 'Jutarnja čuvaonica za djecu', 'Najam', 'Pravilnik', 'Kontakt'].map((item, index) => (
-            <motion.a
-              key={index}
-              href={`#${item.toLowerCase().replace(/ /g, '')}`}
-              className="navigacija text-black drop-shadow-md hover:drop-shadow-xl"
-              variants={hoverVariants}
-              whileHover="hover"
-            >
-              {item}
-            </motion.a>
+            <motion.div key={index} whileHover={{ scale: 1.1 }}>
+              <Link
+                to={item.toLowerCase().replace(/ /g, '') === 'naslovna' ? '/' : `/${item.toLowerCase().replace(/ /g, '')}`}
+                className="navigacija text-black drop-shadow-md hover:drop-shadow-xl"
+              >
+                {item}
+              </Link>
+            </motion.div>
           ))}
         </div>
-
         {/* Mobile Menu Button */}
         <div className="md:hidden">
           <button
@@ -48,20 +45,18 @@ export default function Navbar() {
           </button>
         </div>
       </div>
-
       {/* Mobile Menu */}
       {isOpen && (
         <div className="md:hidden bg-white rounded-full mt-1 p-4">
           {['Naslovna', 'Ples', 'Kutak za mladence', 'Rođendani', 'Jutarnja čuvaonica za djecu', 'Najam', 'Pravilnik', 'Kontakt'].map((item, index) => (
-            <motion.a
-              key={index}
-              href={`#${item.toLowerCase().replace(/ /g, '')}`}
-              className="flex justify-center text-black py-2"
-              variants={hoverVariants}
-              whileHover="hover"
-            >
-              {item}
-            </motion.a>
+            <motion.div key={index} whileHover={{ scale: 1.1 }}>
+              <Link
+                to={item.toLowerCase().replace(/ /g, '') === 'naslovna' ? '/' : `/${item.toLowerCase().replace(/ /g, '')}`}
+                className="flex justify-center text-black py-2"
+              >
+                {item}
+              </Link>
+            </motion.div>
           ))}
         </div>
       )}

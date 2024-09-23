@@ -4,7 +4,6 @@ import Navbar from '../Navbar/Navbar.jsx';
 import { motion } from 'framer-motion';
 import './Naslovna.css';
 import Djeca from '/src/assets/logo_djeca.jpg';
-import { Link } from "@react-email/components";
 import TerminiCorusel from '../Termini_slide_show/termini_s_s.jsx';
 import Prostor1 from '/src/assets/prostor/Prostor1.jpg';
 import Prostor2 from '/src/assets/prostor/Prostor2.png';
@@ -12,9 +11,10 @@ import Prostor3 from '/src/assets/prostor/Prostor3.png';
 import Prostor4 from '/src/assets/prostor/Prostor4.png';
 import Prostor5 from '/src/assets/prostor/Prostor5.png';
 import Prostor6 from '/src/assets/prostor/Prostor6.png';
-import Facebook from '/public/link_facebook.png';
-import Instagram from '/public/link_instagram.png';
+import Facebook from '/link_facebook.png';
+import Instagram from '/link_instagram.png';
 import Footer from '/src/Components/Footer/Footer.jsx';
+import { Link } from 'react-router-dom';
 
 const EmailLink = () => {
   const handleClick = () => {
@@ -80,17 +80,18 @@ const Naslovna = () => {
         <div className="flex justify-center items-center mb-8">
           <div className="grid grid-cols-3 sm:grid-cols-2 md:grid-cols-7 gap-4 xl:grid-cols-9">
             {labels.map((label, index) => (
-              <motion.div
-                key={index}
-                className="flex justify-center items-center xl:w-32 xl:h-32 w-32 h-32 md:w-44 md:h-44 rounded-full bg-magenta-500"
-                variants={{ initial: { scale: 1, opacity: 1 }, hover: { scale: 1.3, opacity: 0.9, transition: { type: 'spring', stiffness: 300, damping: 15 } } }}
-                initial="initial"
-                whileHover="hover"
-              >
-                <div className="flex justify-center items-center xl:w-28 xl:h-28 w-28 h-28 md:w-40 md:h-40 rounded-full bg-white text-center navigacija">
-                  {label}
-                </div>
-              </motion.div>
+              <Link to={`/${label.toLowerCase().replace(/ /g, '')}`} key={index}>
+                <motion.div
+                  className="flex justify-center items-center xl:w-32 xl:h-32 w-32 h-32 md:w-44 md:h-44 rounded-full bg-magenta-500"
+                  variants={{ initial: { scale: 1, opacity: 1 }, hover: { scale: 1.3, opacity: 0.9, transition: { type: 'spring', stiffness: 300, damping: 15 } } }}
+                  initial="initial"
+                  whileHover="hover"
+                >
+                  <div className="flex justify-center items-center xl:w-28 xl:h-28 w-28 h-28 md:w-40 md:h-40 rounded-full bg-white text-center navigacija">
+                    {label}
+                  </div>
+                </motion.div>
+              </Link>
             ))}
           </div>
         </div>
@@ -148,6 +149,8 @@ const Naslovna = () => {
       </section>
 
       {/* Galerija slika */}
+      <section className='mt-10'>
+      <h1 className='text-center podnaslov'>Galerija</h1>
       <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mt-10 p-10">
         {[Prostor1, Prostor2, Prostor3, Prostor4, Prostor5, Prostor6].map((src, index) => (
           <div key={index} onClick={() => handleImageClick(src)}>
@@ -155,14 +158,14 @@ const Naslovna = () => {
           </div>
         ))}
       </div>
-
+      </section>
       {/* Modal za uvećanje slika */}
       {selectedImage && (
         <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-75 z-50" onClick={closeModal}>
           <img src={selectedImage} alt="Enlarged" className="max-w-full max-h-full" />
         </div>
       )}
-      <Footer/>
+      <Footer />
     </>
   );
 };
