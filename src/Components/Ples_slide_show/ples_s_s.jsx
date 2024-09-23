@@ -1,53 +1,60 @@
-import { Carousel } from "@material-tailwind/react";
+import React, { useEffect, useState } from 'react';
 import Ples1 from '../Ples_slide_show/Ples_Slike/Ples1.png';
 import Ples2 from '../Ples_slide_show/Ples_Slike/Ples2.png';
 import Ples3 from '../Ples_slide_show/Ples_Slike/Ples3.png';
 import Ples4 from '../Ples_slide_show/Ples_Slike/Ples4.png';
 
-const TerminiSlideshow = () => {
+const slides = [Ples1, Ples2, Ples3, Ples4];
+
+const PlesSlideShow = () => {
+  const [activeIndex, setActiveIndex] = useState(0);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setActiveIndex((prevIndex) => (prevIndex + 1) % slides.length);
+    }, 5000); // Change slide every 5 seconds
+
+    return () => clearInterval(timer); // Clean up on unmount
+  }, []);
+
+  const handlePrev = () => {
+    setActiveIndex((prevIndex) => (prevIndex - 1 + slides.length) % slides.length);
+  };
+
+  const handleNext = () => {
+    setActiveIndex((prevIndex) => (prevIndex + 1) % slides.length);
+  };
+
   return (
-    <div className="flex justify-center items-center my-8">
-      <Carousel
-        className="rounded-xl w-full max-w-4xl aspect-w-16 aspect-h-9" // Maintain 16:9 aspect ratio
-        prevArrowProps={{ className: 'text-magenta-500' }} // Magenta color for the prev arrow
-        nextArrowProps={{ className: 'text-magenta-500' }} // Magenta color for the next arrow
-        navigation={({ setActiveIndex, activeIndex, length }) => (
-          <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
-            {new Array(length).fill("").map((_, i) => (
-              <span
-                key={i}
-                className={`block w-3 h-3 rounded-full transition-all duration-300 ${
-                  activeIndex === i ? "bg-magenta-500" : "bg-gray-300"
-                }`}
-                onClick={() => setActiveIndex(i)}
-              />
-            ))}
-          </div>
-        )}
-      >
-        <img
-          src={Ples1}
-          alt="Ples 1"
-          className="h-full w-full object-cover"
-        />
-        <img
-          src={Ples2}
-          alt="Ples 2"
-          className="h-full w-full object-cover"
-        />
-        <img
-          src={Ples3}
-          alt="Ples 3"
-          className="h-full w-full object-cover"
-        />
-        <img
-          src={Ples4}
-          alt="Ples 4"
-          className="h-full w-full object-cover"
-        />
-      </Carousel>
+    <div className="relative flex justify-center items-center my-8">
+      <div className="relative w-full max-w-4xl rounded-xl overflow-hidden">
+        <img src={slides[activeIndex]} alt={`Ples Slide ${activeIndex + 1}`} className="h-full w-full object-cover" />
+        <button
+          className="absolute left-4 top-1/2 transform -translate-y-1/2 text-magenta-500 text-3xl cursor-pointer z-10 hover:text-magenta-600"
+          onClick={handlePrev}
+        >
+          &#9664; {/* Left arrow */}
+        </button>
+        <button
+          className="absolute right-4 top-1/2 transform -translate-y-1/2 text-magenta-500 text-3xl cursor-pointer z-10 hover:text-magenta-600"
+          onClick={handleNext}
+        >
+          &#9654; {/* Right arrow */}
+        </button>
+      </div>
+      <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
+        {slides.map((_, index) => (
+          <span
+            key={index}
+            className={`block w-3 h-3 rounded-full transition-all duration-300 cursor-pointer ${
+              activeIndex === index ? "bg-magenta-500" : "bg-gray-300"
+            }`}
+            onClick={() => setActiveIndex(index)}
+          />
+        ))}
+      </div>
     </div>
   );
 };
 
-export default TerminiSlideshow;
+export default PlesSlideShow;

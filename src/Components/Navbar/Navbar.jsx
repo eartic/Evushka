@@ -18,7 +18,7 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="sticky top-0 z-50 bg-magenta-500 p-4">
+    <nav className="sticky top-0 z-50 bg-magenta-500 p-4 sm:w-full">
       <div className="container mx-auto flex justify-center items-center bg-white rounded-full p-4">
         {/* Desktop Menu */}
         <div className="hidden md:flex space-x-8 p-2">
