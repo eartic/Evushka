@@ -29,18 +29,22 @@ const PlesSlideShow = () => {
     <div className="relative flex justify-center items-center my-8">
       <div className="relative w-full max-w-4xl rounded-xl overflow-hidden">
         <img src={slides[activeIndex]} alt={`Ples Slide ${activeIndex + 1}`} className="h-full w-full object-cover" />
-        <button
-          className="absolute left-4 top-1/2 transform -translate-y-1/2 text-magenta-500 text-3xl cursor-pointer z-10 hover:text-magenta-600"
+        
+        {/* Clickable area for previous slide */}
+        <div
+          className="absolute left-0 top-0 h-full w-1/2 cursor-pointer z-10"
           onClick={handlePrev}
-        >
-          &#9664; {/* Left arrow */}
-        </button>
-        <button
-          className="absolute right-4 top-1/2 transform -translate-y-1/2 text-magenta-500 text-3xl cursor-pointer z-10 hover:text-magenta-600"
+          aria-label="Previous Slide"
+          role="button"
+        />
+        
+        {/* Clickable area for next slide */}
+        <div
+          className="absolute right-0 top-0 h-full w-1/2 cursor-pointer z-10"
           onClick={handleNext}
-        >
-          &#9654; {/* Right arrow */}
-        </button>
+          aria-label="Next Slide"
+          role="button"
+        />
       </div>
       <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
         {slides.map((_, index) => (

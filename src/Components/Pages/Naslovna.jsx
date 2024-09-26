@@ -15,6 +15,7 @@ import Facebook from '/link_facebook.png';
 import Instagram from '/link_instagram.png';
 import Footer from '/src/Components/Footer/Footer.jsx';
 import { Link } from 'react-router-dom';
+import ImageModal from './ImageModal';  // <-- Import the ImageModal component
 
 const EmailLink = () => {
   const handleClick = () => {
@@ -41,7 +42,7 @@ const PhoneLink = () => {
 };
 
 const Naslovna = () => {
-  const [selectedImage, setSelectedImage] = useState(null);
+  const [selectedImage, setSelectedImage] = useState(null); // Manage selected image for the modal
   const labels = [
     'Plesna rekreacija za djecu',
     'Tečaj društvenih plesova za odrasle',
@@ -55,11 +56,11 @@ const Naslovna = () => {
   ];
 
   const handleImageClick = (src) => {
-    setSelectedImage(src);
+    setSelectedImage(src); // Set the selected image for the modal
   };
 
   const closeModal = () => {
-    setSelectedImage(null);
+    setSelectedImage(null); // Close the modal
   };
 
   return (
@@ -159,12 +160,10 @@ const Naslovna = () => {
         ))}
       </div>
       </section>
-      {/* Modal za uvećanje slika */}
-      {selectedImage && (
-        <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-75 z-50" onClick={closeModal}>
-          <img src={selectedImage} alt="Enlarged" className="max-w-full max-h-full" />
-        </div>
-      )}
+
+      {/* ImageModal component */}
+      <ImageModal isOpen={selectedImage !== null} imageSrc={selectedImage} onClose={closeModal} />
+
       <Footer />
     </>
   );
