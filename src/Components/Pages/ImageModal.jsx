@@ -9,8 +9,7 @@ const ImageModal = ({ isOpen, imageSrc, onClose }) => {
       <div className="relative bg-white rounded-lg overflow-hidden shadow-lg">
         <button
           onClick={onClose}
-          className="absolute top-2 right-2 bg-magenta-500 text-white rounded-full w-8 h-8 flex items-center justify-center hover:bg-magenta-600 transition"
-        >
+          className="absolute top-2 right-2 bg-magenta-500 text-white rounded-full w-8 h-8 flex items-center justify-center hover:bg-magenta-600 transition">    
           &times;
         </button>
         <img src={imageSrc} alt="Enlarged" className="max-w-full max-h-[80vh] object-cover" />

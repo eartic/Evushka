@@ -48,3 +48,10 @@ h1{
     margin-bottom: 1rem; /* Optional: Add spacing between items */
   }
 }
+
+@media (prefers-color-scheme: dark) and (max-width: 640px) {
+  body {
+    background-color: white !important; /* Change background color to white */
+    color: black !important; /* Change text color to black */
+  }
+}

@@ -24,17 +24,19 @@ const Mladenci = () => {
   return (
     <>
       <Navbar />
+      <h1 className="pt-10 text-center">Kutak za mladence</h1>
+
       <div className="mt-5">
-        <p className="uvodniParagraph text-center">
-          Dragi mladenci, neka Vaš prvi ples bude poseban ❤️
-        </p>
+        
         <div className="flex justify-center">
           <img
             src={PlesMladenci}
             alt="Ples mladenci"
-            className="w-full max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-2xl h-auto"
-          />
-        </div>
+            className="w-full max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-2xl h-auto"/>
+            </div>
+            <p className="uvodniParagraph text-center">
+          Dragi mladenci, neka Vaš prvi ples bude poseban ❤️
+        </p>
       </div>
       <div className="mx-auto max-w-4xl p-3 flex justify-center text-center ostatakTexta">
         <p>Prvi ples je važan trenutak na svakom vjenčanju. Neka bude za pamćenje. Sati plesa provode se individualno i posvećeni smo samo Vama. Koreografija se prilagođava Vama i koreografirana je samo za Vas.</p>
