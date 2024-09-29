@@ -3,11 +3,14 @@ import { FaEnvelope, FaPhone, FaInstagram, FaFacebook, FaWhatsapp, FaViber } fro
 import Navbar from '../Navbar/Navbar';
 import Footer from '../Footer/Footer';
 import { motion } from 'framer-motion'; // Import motion from framer-motion
+import LogoImage from '../Banner/logo.jsx';
 
 const Kontakt = () => {
   return (
     <>
+     <LogoImage />
       <Navbar />
+     
       <section>
         <div className="flex justify-center items-center mt-5">
           <h2 className="podnaslov">Kontaktirajte nas:</h2>
