@@ -15,7 +15,7 @@ const Kontakt = () => {
         <div className="flex justify-center items-center mt-5">
           <h2 className="podnaslov">Kontaktirajte nas:</h2>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-6 mx-32 p-2">
+        <div className="grid grid-cols-2 gap-5 md:grid-cols-6 mx-32 p-2">
           {/* Email Circle */}
           <div className="flex flex-col items-center">
             <motion.div
