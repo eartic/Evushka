@@ -124,6 +124,16 @@ const Kontakt = () => {
             ></iframe>
           </div>
         </div>
+      </div> 
+      <div>
+        <a 
+    href="https://www.google.com/maps/place/Papageno/@45.7681864,15.9412868,19z/data=!3m1!4b1!4m6!3m5!1s0x4765d43ba5618d1b:0x38fe4890afd53550!8m2!3d45.7681864!4d15.9419305!16s%2Fg%2F1tg2c8sh?entry=ttu&g_ep=EgoyMDI0MDkxOC4xIKXMDSoASAFQAw%3D%3D&utm_medium=s2email&shorturl=1"
+  target="_blank" 
+  rel="noopener noreferrer" 
+  className="w-12 h-12"
+><p className="text-center">
+Jaruščica 9b, <br />10020, Zagreb, Croatia</p> </a>
+
       </div>
 
       <Footer />
