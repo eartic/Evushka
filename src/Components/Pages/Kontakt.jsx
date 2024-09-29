@@ -133,9 +133,7 @@ const Kontakt = () => {
   className="w-12 h-12"
 ><p className="text-center">
 Jaruščica 9b, <br />10020, Zagreb, Croatia</p> </a>
-
       </div>
-
       <Footer />
     </>
   );

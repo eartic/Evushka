@@ -52,7 +52,7 @@ const Naslovna = () => {
     'Kutak za mladence',
     'Rođendani',
     'Jutarnja čuvaonica za djecu',
-    'Najam prostora',
+    'Najam prostora', // This is the circle we want to link to Najam.jsx
   ];
 
   const handleImageClick = (src) => {
@@ -81,7 +81,7 @@ const Naslovna = () => {
         <div className="flex justify-center items-center mb-8">
           <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-4 xl:grid-cols-9">
             {labels.map((label, index) => (
-              <Link to={`/${label.toLowerCase().replace(/ /g, '')}`} key={index}>
+              <Link to={index < 5 ? '/ples' : (label === 'Najam prostora' ? '/najam' : `/${label.toLowerCase().replace(/ /g, '')}`)} key={index}>
                 <motion.div
                   className="flex justify-center items-center xl:w-32 xl:h-32 w-32 h-32 md:w-44 md:h-44 rounded-full bg-magenta-500"
                   variants={{ initial: { scale: 1, opacity: 1 }, hover: { scale: 1.3, opacity: 0.9, transition: { type: 'spring', stiffness: 300, damping: 15 } } }}
@@ -98,7 +98,6 @@ const Naslovna = () => {
         </div>
       </div>
 
-      
       <div className='ml-1 mt-10 p-3'>
         <div className='grid gap-2 grid-cols-1 md:grid-cols-3 w-full h-auto'>
           <div className='flex flex-col items-center text-center'>
@@ -114,7 +113,6 @@ const Naslovna = () => {
         </div>
       </div>
 
-      
       <section>
         <div className='flex justify-center justify-items-center'>
           <h1 className='text-center'>Aktualni termini</h1>
@@ -122,7 +120,6 @@ const Naslovna = () => {
         <TerminiCorusel />
       </section>
 
-      
       <section className='mt-10'>
         <h1 className='text-center podnaslov'>Pratite nas</h1>
         <div className="flex justify-center items-center mt-6">
@@ -149,16 +146,15 @@ const Naslovna = () => {
         </div>
       </section>
 
-     
       <section className='mt-10'>
-      <h1 className='text-center podnaslov'>Galerija</h1>
-      <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mt-10 p-10">
-        {[Prostor1, Prostor2, Prostor3, Prostor4, Prostor5, Prostor6].map((src, index) => (
-          <div key={index} onClick={() => handleImageClick(src)}>
-            <img className="h-auto max-w-full rounded-lg cursor-pointer" src={src} alt="" />
-          </div>
-        ))}
-      </div>
+        <h1 className='text-center podnaslov'>Galerija</h1>
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mt-10 p-10">
+          {[Prostor1, Prostor2, Prostor3, Prostor4, Prostor5, Prostor6].map((src, index) => (
+            <div key={index} onClick={() => handleImageClick(src)}>
+              <img className="h-auto max-w-full rounded-lg cursor-pointer" src={src} alt="" />
+            </div>
+          ))}
+        </div>
       </section>
 
       <ImageModal isOpen={selectedImage !== null} imageSrc={selectedImage} onClose={closeModal} />

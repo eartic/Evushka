@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Link } from 'react-router-dom'; // Dodaj ovaj import
+import { Link } from 'react-router-dom';
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -17,18 +17,26 @@ export default function Navbar() {
     },
   };
 
+  const menuItems = [
+    { name: 'Naslovna', path: '/' },
+    { name: 'Ples', path: '/ples' },
+    { name: 'Kutak za mladence', path: '/kutakZaMladence' },
+    { name: 'Rođendani', path: '/rođendani' },
+    { name: 'Jutarnja čuvaonica za djecu', path: '/jutarnjaČuvaonicaZaDjecu' },
+    { name: 'Najam', path: '/najam' },
+    { name: 'Pravilnik', path: '/pravilnik' },
+    { name: 'Kontakt', path: '/kontakt' },
+  ];
+
   return (
     <nav className="sticky top-0 z-50 bg-magenta-500 p-4">
       <div className="container mx-auto flex justify-center items-center bg-white rounded-full p-4">
         {/* Desktop Menu */}
         <div className="hidden md:flex space-x-8 p-2">
-          {['Naslovna', 'Ples', 'Kutak za mladence', 'Rođendani', 'Jutarnja čuvaonica za djecu', 'Najam', 'Pravilnik', 'Kontakt'].map((item, index) => (
+          {menuItems.map((item, index) => (
             <motion.div key={index} whileHover={{ scale: 1.1 }}>
-              <Link
-                to={item.toLowerCase().replace(/ /g, '') === 'naslovna' ? '/' : `/${item.toLowerCase().replace(/ /g, '')}`}
-                className="navigacija text-black drop-shadow-md hover:drop-shadow-xl"
-              >
-                {item}
+              <Link to={item.path} className="navigacija text-black drop-shadow-md hover:drop-shadow-xl">
+                {item.name}
               </Link>
             </motion.div>
           ))}
@@ -48,13 +56,10 @@ export default function Navbar() {
       {/* Mobile Menu */}
       {isOpen && (
         <div className="md:hidden bg-white rounded-full mt-1 p-4">
-          {['Naslovna', 'Ples', 'Kutak za mladence', 'Rođendani', 'Jutarnja čuvaonica za djecu', 'Najam', 'Pravilnik', 'Kontakt'].map((item, index) => (
+          {menuItems.map((item, index) => (
             <motion.div key={index} whileHover={{ scale: 1.1 }}>
-              <Link
-                to={item.toLowerCase().replace(/ /g, '') === 'naslovna' ? '/' : `/${item.toLowerCase().replace(/ /g, '')}`}
-                className="flex justify-center text-black py-2"
-              >
-                {item}
+              <Link to={item.path} className="flex justify-center text-black py-2">
+                {item.name}
               </Link>
             </motion.div>
           ))}
