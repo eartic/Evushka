@@ -9,6 +9,8 @@ import Rodendan from './Components/Pages/Rodendan.jsx';
 import Cuvaonica from './Components/Pages/Cuvaonica.jsx';
 import Najam from './Components/Pages/Najam.jsx';
 import Pravilnik from './Components/Pages/Pravilnik.jsx';
+import Kontakt from './Components/Pages/Kontakt.jsx';
+
 import ScrollToTop from './ScrollToTop'; 
 
 createRoot(document.getElementById('root')).render(
@@ -23,7 +25,8 @@ createRoot(document.getElementById('root')).render(
         <Route path="/jutarnjaČuvaonicaZaDjecu" element={<Cuvaonica />} />
         <Route path="/najam" element={<Najam />} />
         <Route path="/pravilnik" element={<Pravilnik />} />
-      
+        <Route path="/kontakt" element={<Kontakt />} />
+
       </Routes>
     </Router>
   </StrictMode>
