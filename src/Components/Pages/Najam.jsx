@@ -2,9 +2,9 @@ import React from 'react';
 import Navbar from '../Navbar/Navbar';
 import Footer from '../Footer/Footer';
 import LogoImage from '/src/Components/Banner/logo.jsx';
-import Prostor4 from '/src/assets/prostor/prostor4.png'; // Image for "ulazna prostorija"
-import Prostor6 from '/src/assets/prostor/prostor6.png'; // Image for "druga prostorija"
-import Prostor1 from '/src/assets/prostor/prostor1.jpg'; // Image for "dječja soba"
+import Prostor4 from '/src/assets/prostor/prostor4.png'; 
+import Prostor6 from '/src/assets/prostor/prostor6.png'; 
+import Prostor1 from '/src/assets/prostor/prostor1.jpg'; 
 
 const Najam = () => {
   return (
@@ -28,7 +28,6 @@ const Najam = () => {
       <section>
         <div className="flex flex-col">
           <div className="grid grid-cols-1 p-3">
-            {/* First row: Ulazni dio */}
             <div className="flex flex-col md:flex-row items-center justify-center space-y-6 md:space-y-0 md:space-x-4">
               <div className="circle flex items-center justify-center text-center w-96 h-96 rounded-full border-8 border-magenta-500 bg-white">
                 <p className="p-10 ostatakTexta text-sm md:text-base">
@@ -40,7 +39,6 @@ const Najam = () => {
               </div>
             </div>
 
-            {/* Second row: Druga prostorija */}
             <div className="flex flex-col md:flex-row items-center justify-center space-y-6 md:space-y-0 md:space-x-4 mt-6">
               <div className="circle flex items-center justify-center text-center w-96 h-96 rounded-full border-8 border-magenta-500 bg-white">
                 <p className="p-10 ostatakTexta text-sm md:text-base">
@@ -52,7 +50,6 @@ const Najam = () => {
               </div>
             </div>
 
-            {/* Third row: Dječja soba */}
             <div className="flex flex-col md:flex-row items-center justify-center space-y-6 md:space-y-0 md:space-x-4 mt-6">
               <div className="circle flex items-center justify-center text-center w-96 h-96 rounded-full border-8 border-magenta-500 bg-white">
                 <p className="p-10 ostatakTexta text-sm md:text-base">
@@ -72,9 +69,7 @@ const Najam = () => {
       <div className='text-center'>
   <h2 className='podnaslov'>Prostor bi po svojoj opremljenosti, veličini i smještaju idealno služio za:</h2>
   <div className="flex flex-col p-7">
-    {/* On small and medium screens, it will stack (1 column); on large screens it will be 3 columns */}
-    <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-6">
-      {/* Circle 1 */}
+    <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-6">      
       <div className="flex flex-col items-center">
         <div className="circle flex items-center justify-center text-center w-96 h-96 rounded-full border-8 border-magenta-500 bg-white">
           <p className="p-10 ostatakTexta text-sm md:text-base">
@@ -84,7 +79,6 @@ const Najam = () => {
         </div>
       </div>
       
-      {/* Circle 2 */}
       <div className="flex flex-col items-center">
         <div className="circle flex items-center justify-center text-center w-96 h-96 rounded-full border-8 border-magenta-500 bg-white">
           <p className="p-10 ostatakTexta text-sm md:text-base">
@@ -96,7 +90,6 @@ const Najam = () => {
         </div>
       </div>
       
-      {/* Circle 3 */}
       <div className="flex flex-col items-center">
         <div className="circle flex items-center justify-center text-center w-96 h-96 rounded-full border-8 border-magenta-500 bg-white">
           <p className="p-10 ostatakTexta text-sm md:text-base">

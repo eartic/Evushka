@@ -19,22 +19,20 @@ const Rodendan = () => {
   const [data, setData] = useState(null);
   const [selectedImage, setSelectedImage] = useState(null);
 
-  // Load data from JSON on component mount
   useEffect(() => {
     setData(RodendaniText);
   }, []);
 
-  // Handle image click for the modal
   const handleImageClick = (src) => {
     setSelectedImage(src);
   };
 
-  // Close the modal
+  
   const closeModal = () => {
     setSelectedImage(null);
   };
 
-  // Check if data is loading
+
   if (!data) {
     return <div>Učitavanje...</div>;
   }

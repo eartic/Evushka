@@ -42,16 +42,20 @@ h1{
 
 @media (max-width: 768px) {
   .grid_kolona {
-    grid-template-columns: 1fr; /* Make it a single column on small screens */
+    grid-template-columns: 1fr; 
   }
   .grid_kolona > div {
-    margin-bottom: 1rem; /* Optional: Add spacing between items */
+    margin-bottom: 1rem; 
   }
 }
 
 @media (prefers-color-scheme: dark) and (max-width: 640px) {
   body {
-    background-color: white !important; /* Change background color to white */
-    color: black !important; /* Change text color to black */
+    background-color: white !important; 
+    color: black !important; 
   }
+}
+
+html {
+  scroll-behavior: smooth;
 }

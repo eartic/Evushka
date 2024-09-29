@@ -15,7 +15,7 @@ import Facebook from '/link_facebook.png';
 import Instagram from '/link_instagram.png';
 import Footer from '/src/Components/Footer/Footer.jsx';
 import { Link } from 'react-router-dom';
-import ImageModal from './ImageModal';  // <-- Import the ImageModal component
+import ImageModal from './ImageModal'; 
 
 const EmailLink = () => {
   const handleClick = () => {
@@ -42,7 +42,7 @@ const PhoneLink = () => {
 };
 
 const Naslovna = () => {
-  const [selectedImage, setSelectedImage] = useState(null); // Manage selected image for the modal
+  const [selectedImage, setSelectedImage] = useState(null); 
   const labels = [
     'Plesna rekreacija za djecu',
     'Tečaj društvenih plesova za odrasle',
@@ -56,11 +56,11 @@ const Naslovna = () => {
   ];
 
   const handleImageClick = (src) => {
-    setSelectedImage(src); // Set the selected image for the modal
+    setSelectedImage(src); 
   };
 
   const closeModal = () => {
-    setSelectedImage(null); // Close the modal
+    setSelectedImage(null); 
   };
 
   return (
@@ -98,7 +98,7 @@ const Naslovna = () => {
         </div>
       </div>
 
-      {/* Kontakt radno vrijeme */}
+      
       <div className='ml-1 mt-10 p-3'>
         <div className='grid gap-2 grid-cols-1 md:grid-cols-3 w-full h-auto'>
           <div className='flex flex-col items-center text-center'>
@@ -114,7 +114,7 @@ const Naslovna = () => {
         </div>
       </div>
 
-      {/* Aktualni termini slid show link */}
+      
       <section>
         <div className='flex justify-center justify-items-center'>
           <h1 className='text-center'>Aktualni termini</h1>
@@ -122,7 +122,7 @@ const Naslovna = () => {
         <TerminiCorusel />
       </section>
 
-      {/* Podnaslov "Pratite nas" */}
+      
       <section className='mt-10'>
         <h1 className='text-center podnaslov'>Pratite nas</h1>
         <div className="flex justify-center items-center mt-6">
@@ -149,7 +149,7 @@ const Naslovna = () => {
         </div>
       </section>
 
-      {/* Galerija slika */}
+     
       <section className='mt-10'>
       <h1 className='text-center podnaslov'>Galerija</h1>
       <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mt-10 p-10">
@@ -161,7 +161,6 @@ const Naslovna = () => {
       </div>
       </section>
 
-      {/* ImageModal component */}
       <ImageModal isOpen={selectedImage !== null} imageSrc={selectedImage} onClose={closeModal} />
 
       <Footer />

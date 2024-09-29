@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import PlesText from '/src/Components/Pages/PlesText.json'; // JSON datoteka
+import PlesText from '/src/Components/Pages/PlesText.json'; 
 import Navbar from '/src/Components/Navbar/Navbar.jsx';
 import Footer from '/src/Components/Footer/Footer.jsx';
 import PlesSlideShow from '/src/Components/Ples_slide_show/ples_s_s.jsx';
@@ -21,7 +21,7 @@ const Ples = () => {
       <PlesSlideShow/>
       <div className="flex flex-col items-center p-8">
         <div className="flex flex-col md:flex-row justify-center items-center max-w-6xl">
-          {/* Krugovi za Djecu */}
+          
           <div className="flex flex-col items-center space-y-8 mb-8 md:mb-0 md:mr-8">
             {data.djecji.map((item, index) => (
               <div key={index} className="flex flex-col items-center">
@@ -33,7 +33,7 @@ const Ples = () => {
             ))}
           </div>
 
-          {/* Krugovi za Odrasle */}
+         
           <div className="flex flex-col items-center space-y-8 md:ml-8">
             {data.odrasli.map((item, index) => (
               <div key={index} className="flex flex-col items-center">

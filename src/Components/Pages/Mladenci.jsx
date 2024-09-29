@@ -1,23 +1,20 @@
 import React, { useEffect, useState } from "react";
-import Navbar from '../Navbar/Navbar.jsx'; // Adjusted path to be relative
-import Footer from '../Footer/Footer.jsx'; // Adjusted path to be relative
-import ImageModal from "./ImageModal"; // Fixed empty string to point to ImageModal
-import Mladenci1 from '../../assets/mladenci/mladenci1.jpg'; // Adjusted path to be relative
-import Mladenci2 from '../../assets/mladenci/mladenci2.jpg'; // Adjusted path to be relative
-import Mladenci3 from '../../assets/mladenci/mladenci3.jpg'; // Adjusted path to be relative
+import Navbar from '../Navbar/Navbar.jsx'; 
+import Footer from '../Footer/Footer.jsx'; 
+import ImageModal from "./ImageModal"; 
+import Mladenci1 from '../../assets/mladenci/mladenci1.jpg';
+import Mladenci2 from '../../assets/mladenci/mladenci2.jpg';
+import Mladenci3 from '../../assets/mladenci/mladenci3.jpg'; 
 import VideoMladenci from '../../assets/mladenci/PlesMladenci.mp4';
-import PlesMladenci from '../Ples_slide_show/Ples_Slike/Ples1.png'; // Adjusted path to be relative
+import PlesMladenci from '../Ples_slide_show/Ples_Slike/Ples1.png'; 
 
 const Mladenci = () => {
-  // State for managing the selected image for the modal
   const [selectedImage, setSelectedImage] = useState(null);
 
-  // Handle when an image is clicked
   const handleImageClick = (src) => {
     setSelectedImage(src);
   };
 
-  // Close the modal
   const closeModal = () => {
     setSelectedImage(null);
   };
@@ -45,14 +42,14 @@ const Mladenci = () => {
 
       <section>
       <div className="flex justify-center items-center">
-      {/* Video Container */}
+      
       <div className="relative w-96 h-96">
         <video
           className="w-full h-full object-cover rounded-full border-8 border-magenta"
           autoPlay
           muted
-          loop // Optional: if you want the video to loop
-          playsInline // Useful for mobile browsers
+          loop 
+          playsInline 
         >
           <source src={VideoMladenci} type="video/mp4" />
           Your browser does not support the video tag.
@@ -65,7 +62,7 @@ const Mladenci = () => {
         <div className="grid justify-center justify-items-center grid-cols-1 md:grid-cols-3 gap-4 mt-10 p-5 m-10">
           {[Mladenci1, Mladenci2, Mladenci3].map((src, index) => (      
             <div key={index} onClick={() => handleImageClick(src)}>
-              <img className="max-h-96 max-w-full rounded-lg cursor-pointer" src={src} alt={`Mladenci image ${index + 1}`} />
+              <img className="max-h-96 max-w-full rounded-lg cursor-pointer shadow-lg shadow-gray-500/50" src={src} alt={`Mladenci image ${index + 1}`} />
             </div>
           ))}
         </div>

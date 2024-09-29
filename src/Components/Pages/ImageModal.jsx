@@ -1,4 +1,3 @@
-// ImageModal.jsx
 import React from 'react';
 
 const ImageModal = ({ isOpen, imageSrc, onClose }) => {

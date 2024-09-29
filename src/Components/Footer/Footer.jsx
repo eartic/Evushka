@@ -62,8 +62,6 @@ const Footer = () => {
   <img src={Map} alt="Google Maps" />
 </a>
 </div>
-          
-        
       </div>
     </footer>
   );
