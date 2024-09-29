@@ -76,7 +76,7 @@ const Najam = () => {
     <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-6">
       {/* Circle 1 */}
       <div className="flex flex-col items-center">
-        <div className="circle flex items-center justify-center text-center w-full max-w-96 h-96 rounded-full border-8 border-magenta-500 bg-white">
+        <div className="circle flex items-center justify-center text-center w-96 h-96 rounded-full border-8 border-magenta-500 bg-white">
           <p className="p-10 ostatakTexta text-sm md:text-base">
             Škole stranih jezika, glazbenu školu, edukacije, prezentacije, projekcije, razne tečajeve <br />
             Cijena najma prostora za partnere se definira s obzirom na realne potrebe, te na broj i kontinuitet korištenja, a osnovna cijena se računa po satu €/h za kratkoročne najmove.
@@ -86,7 +86,7 @@ const Najam = () => {
       
       {/* Circle 2 */}
       <div className="flex flex-col items-center">
-        <div className="circle flex items-center justify-center text-center w-full max-w-96 h-96 rounded-full border-8 border-magenta-500 bg-white">
+        <div className="circle flex items-center justify-center text-center w-96 h-96 rounded-full border-8 border-magenta-500 bg-white">
           <p className="p-10 ostatakTexta text-sm md:text-base">
             Dnevni najam prostora <br />
             Mjesečni najam prostora <br />
@@ -98,7 +98,7 @@ const Najam = () => {
       
       {/* Circle 3 */}
       <div className="flex flex-col items-center">
-        <div className="circle flex items-center justify-center text-center w-full max-w-96 h-96 rounded-full border-8 border-magenta-500 bg-white">
+        <div className="circle flex items-center justify-center text-center w-96 h-96 rounded-full border-8 border-magenta-500 bg-white">
           <p className="p-10 ostatakTexta text-sm md:text-base">
             Cjena najma prostora za 20€/h
           </p>
