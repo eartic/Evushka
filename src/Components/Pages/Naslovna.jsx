@@ -148,7 +148,7 @@ const Naslovna = () => {
 
       <section className='mt-10'>
         <h1 className='text-center podnaslov'>Galerija</h1>
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mt-10 p-10">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-10 p-10">
           {[Prostor1, Prostor2, Prostor3, Prostor4, Prostor5, Prostor6].map((src, index) => (
             <div key={index} onClick={() => handleImageClick(src)}>
               <img className="h-auto max-w-full rounded-lg cursor-pointer" src={src} alt="" />

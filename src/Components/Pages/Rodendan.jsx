@@ -81,7 +81,7 @@
 
         {/* Galerija slika */}
         <section className="mt-10">
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mt-10 p-10">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-10 p-10">
             {[Rodendan1, Rodendan2, Rodendan3, Rodendan4, Rodendan5, Rodendan6, Rodendan7, Rodendan8, Rodendan9].map((src, index) => (
               <div key={index} onClick={() => handleImageClick(src)}>
                 <img className="h-auto max-w-full rounded-lg cursor-pointer" src={src} alt={`Rodendan image ${index + 1}`} />
