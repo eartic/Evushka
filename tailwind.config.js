@@ -1,5 +1,4 @@
 /** @type {import('tailwindcss').Config} */
-
 const withMT = require("@material-tailwind/react/utils/withMT");
 
 module.exports = withMT({
@@ -16,6 +15,6 @@ module.exports = withMT({
       },
     },
   },
-  darkMode: 'class', // Enable class-based dark mode
+  darkMode: 'class', // Use 'class' for dark mode control
   plugins: [],
 });

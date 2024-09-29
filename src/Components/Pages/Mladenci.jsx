@@ -5,6 +5,7 @@ import ImageModal from "./ImageModal"; // Fixed empty string to point to ImageMo
 import Mladenci1 from '../../assets/mladenci/mladenci1.jpg'; // Adjusted path to be relative
 import Mladenci2 from '../../assets/mladenci/mladenci2.jpg'; // Adjusted path to be relative
 import Mladenci3 from '../../assets/mladenci/mladenci3.jpg'; // Adjusted path to be relative
+import VideoMladenci from '../../assets/mladenci/PlesMladenci.mp4';
 import PlesMladenci from '../Ples_slide_show/Ples_Slike/Ples1.png'; // Adjusted path to be relative
 
 const Mladenci = () => {
@@ -42,7 +43,25 @@ const Mladenci = () => {
         <p>Prvi ples je važan trenutak na svakom vjenčanju. Neka bude za pamćenje. Sati plesa provode se individualno i posvećeni smo samo Vama. Koreografija se prilagođava Vama i koreografirana je samo za Vas.</p>
       </div>
 
-      <section className='mt-10'>
+      <section>
+      <div className="flex justify-center items-center">
+      {/* Video Container */}
+      <div className="relative w-96 h-96">
+        <video
+          className="w-full h-full object-cover rounded-full border-8 border-magenta"
+          autoPlay
+          muted
+          loop // Optional: if you want the video to loop
+          playsInline // Useful for mobile browsers
+        >
+          <source src={VideoMladenci} type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+      </section>
+
+      <section >
         <div className="grid justify-center justify-items-center grid-cols-1 md:grid-cols-3 gap-4 mt-10 p-5 m-10">
           {[Mladenci1, Mladenci2, Mladenci3].map((src, index) => (      
             <div key={index} onClick={() => handleImageClick(src)}>

@@ -1,21 +1,3 @@
-{/*  import React from 'react';
-  import LogoImage from '/src/assets/logo.png';
-  import { div } from 'framer-motion/client';
-
-  const Logo = () => {
-    return (<>
-      <div className='grid grid-cols-3 items-center'>
-        <p className='absolute  text-black text-l'> Plesna igraonica & rođendaonica </p>
-      <div className='flex justify-center'>
-        <img src={LogoImage} alt="logo banner" className='max-w-80 h-auto' />
-      </div>
-      </div>
-      
-      </>
-    );
-  }
-
-  export default Logo; */}
   import React from 'react';
   import LogoImage from '/src/assets/logo.png';
   

@@ -1,7 +1,8 @@
 import { Carousel } from "@material-tailwind/react";
-import Termini1 from '../Termini_slide_show/Termini_Slike/Termini_djeca.png';
-import Termini2 from '../Termini_slide_show/Termini_Slike/Termini_latin.png';
-import Termini3 from '../Termini_slide_show/Termini_Slike/Termini_odrasli.png';
+import Termini1 from '../Termini_slide_show/Termini_Slike/termini4.jpg';
+import Termini2 from '../Termini_slide_show/Termini_Slike/termini5.jpg';
+import Termini3 from '../Termini_slide_show/Termini_Slike/Termini_latin.png';
+import Termini4 from '../Termini_slide_show/Termini_Slike/Termini_odrasli.png';
 
 const TerminiSlideshow = () => {
   return (
@@ -39,6 +40,11 @@ const TerminiSlideshow = () => {
           alt="Termini 3"
           className="h-full w-full object-cover"
         />
+         <img
+          src={Termini4}
+          alt="Termini 4"
+          className="h-full w-full object-cover"
+          />
       </Carousel>
     </div>
   );
