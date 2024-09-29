@@ -73,7 +73,7 @@ const Najam = () => {
       <div className="flex flex-col items-center">
         <div className="circle flex items-center justify-center text-center w-96 h-96 rounded-full border-8 border-magenta-500 bg-white">
           <p className="p-10 ostatakTexta text-sm md:text-base">
-            Škole stranih jezika, glazbenu školu, edukacije, prezentacije, projekcije, razne tečajeve <br />
+            Škole stranih jezika<br /> Glazbenu školu <br /> Edukacije <br /> Prezentacije <br /> Projekcije <br /> Razne tečajeve <br />
             Cijena najma prostora za partnere se definira s obzirom na realne potrebe, te na broj i kontinuitet korištenja, a osnovna cijena se računa po satu €/h za kratkoročne najmove.
           </p>
         </div>
