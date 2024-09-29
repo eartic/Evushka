@@ -2,20 +2,24 @@ import React from 'react';
 import { FaEnvelope, FaPhone, FaInstagram, FaFacebook, FaWhatsapp, FaViber } from 'react-icons/fa';
 import Navbar from '../Navbar/Navbar';
 import Footer from '../Footer/Footer';
-import { motion } from 'framer-motion'; // Import motion from framer-motion
+import { motion } from 'framer-motion';
 import LogoImage from '../Banner/logo.jsx';
 
 const Kontakt = () => {
   return (
     <>
-     <LogoImage />
+      <LogoImage />
       <Navbar />
-     
+
+      {/* Contact Section */}
       <section>
         <div className="flex justify-center items-center mt-5">
           <h2 className="podnaslov">Kontaktirajte nas:</h2>
         </div>
-        <div className="grid grid-cols-2 gap-5 md:grid-cols-6 mx-32 p-2">
+
+        {/* Contact Icons */}
+        <div className="grid grid-cols-2 gap-2 mx-4 p-2 md:grid-cols-6 md:mx-32">
+
           {/* Email Circle */}
           <div className="flex flex-col items-center">
             <motion.div
@@ -84,7 +88,7 @@ const Kontakt = () => {
               initial="initial"
               whileHover="hover"
             >
-              <a href="https://api.whatsapp.com/send?phone=1234567890" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+              <a href="https://wa.me/yourphonenumber" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
                 <FaWhatsapp className="text-3xl text-magenta-500" />
               </a>
             </motion.div>
@@ -99,41 +103,30 @@ const Kontakt = () => {
               initial="initial"
               whileHover="hover"
             >
-              <a href="viber://chat?number=1234567890" target="_blank" rel="noopener noreferrer" aria-label="Viber">
+              <a href="viber://chat?number=yourphonenumber" target="_blank" rel="noopener noreferrer" aria-label="Viber">
                 <FaViber className="text-3xl text-magenta-500" />
               </a>
             </motion.div>
             <p className="mt-2">Viber</p>
           </div>
+
         </div>
       </section>
 
-      {/* Google Map Section */}
-      <div className="flex justify-center items-center mt-10">
-        <div className="flex flex-col items-center">
-          <h2 className="podnaslov text-center mb-4">Naša Lokacija</h2>
-          <div className=" w-96 h-96 rounded-lg border-4 border-magenta-500 bg-white shadow-md shadow-gray-600 overflow-hidden flex justify-center items-center">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2620.298178622757!2d15.97331731567414!3d45.8153912791013!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4765d53d9f14995b%3A0xd0c4c3aa913c6829!2sJaru%C5%A1cica%209b%2C%2010020%20Zagreb%2C%20Croatia!5e0!3m2!1sen!2sus!4v1696101292945!5m2!1sen!2sus"
-              width="384px"
-              height="384px"
-              style={{ border: 0 }}
-              allowFullScreen=""
-              loading="lazy"
-              title="Google Map Location"
-            ></iframe>
-          </div>
-        </div>
-      </div> 
-      <div>
-        <a 
-    href="https://www.google.com/maps/place/Papageno/@45.7681864,15.9412868,19z/data=!3m1!4b1!4m6!3m5!1s0x4765d43ba5618d1b:0x38fe4890afd53550!8m2!3d45.7681864!4d15.9419305!16s%2Fg%2F1tg2c8sh?entry=ttu&g_ep=EgoyMDI0MDkxOC4xIKXMDSoASAFQAw%3D%3D&utm_medium=s2email&shorturl=1"
-  target="_blank" 
-  rel="noopener noreferrer" 
-  className="w-12 h-12"
-><p className="text-center">
-Jaruščica 9b, <br />10020, Zagreb, Croatia</p> </a>
-      </div>
+      {/* Google Maps Section */}
+      <section className="mt-10">
+      <div className="flex justify-center mt-8">
+  <iframe
+    title="Google Map"
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2781.770781095259!2d15.966247315570256!3d45.77618427910565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4765d6376c74fe4b%3A0x3231fd7e54e7c8d4!2sJaru%C5%A1%C4%8Dica%209b%2C%2010020%2C%20Zagreb%2C%20Croatia!5e0!3m2!1sen!2sus!4v1695918914145!5m2!1sen!2sus"
+    className="w-full h-64 sm:w-3/4 sm:h-80 md:w-2/3 md:h-96 lg:w-1/2 lg:h-96 xl:w-1/3 xl:h-96 border-4 border-magenta-500" // Adjust width/height for different screens
+    allowFullScreen=""
+    loading="lazy"
+    referrerPolicy="no-referrer-when-downgrade"
+  ></iframe>
+</div>
+      </section>
+
       <Footer />
     </>
   );
