@@ -52,7 +52,7 @@ const Naslovna = () => {
     'Kutak za mladence',
     'Rođendani',
     'Jutarnja čuvaonica za djecu',
-    'Najam prostora', // This is the circle we want to link to Najam.jsx
+    'Najam prostora', 
   ];
 
   const handleImageClick = (src) => {
@@ -65,7 +65,7 @@ const Naslovna = () => {
 
   return (
     <>
-      <LogoImage className='shadow-xl shadow-gray-800' />
+      <LogoImage />
       <Navbar />
       <div className='flex justify-center items-center w-full h-auto py-3'>
         <div className='w-5/6 sm:w-1/2 md:w-1/3 xs:h-5/6'>
