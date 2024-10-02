@@ -23,7 +23,7 @@ const Kontakt = () => {
           {/* Email Circle */}
           <div className="flex flex-col items-center">
             <motion.div
-              className="circle flex items-center justify-center text-center w-20 h-20 rounded-full border-4 border-magenta-500 bg-white"
+              className="shadow-lg shadow-gray-800 flex items-center justify-center text-center w-20 h-20 rounded-full border-4 border-magenta-500 bg-white"
               variants={{ initial: { scale: 1, opacity: 1 }, hover: { scale: 1.1, opacity: 0.9, transition: { type: 'spring', stiffness: 300, damping: 15 } } }}
               initial="initial"
               whileHover="hover"
@@ -38,7 +38,7 @@ const Kontakt = () => {
           {/* Phone Circle */}
           <div className="flex flex-col items-center">
             <motion.div
-              className="circle flex items-center justify-center text-center w-20 h-20 rounded-full border-4 border-magenta-500 bg-white"
+              className="shadow-lg shadow-gray-800 flex items-center justify-center text-center w-20 h-20 rounded-full border-4 border-magenta-500 bg-white"
               variants={{ initial: { scale: 1, opacity: 1 }, hover: { scale: 1.1, opacity: 0.9, transition: { type: 'spring', stiffness: 300, damping: 15 } } }}
               initial="initial"
               whileHover="hover"
@@ -53,7 +53,7 @@ const Kontakt = () => {
           {/* Instagram Circle */}
           <div className="flex flex-col items-center">
             <motion.div
-              className="circle flex items-center justify-center text-center w-20 h-20 rounded-full border-4 border-magenta-500 bg-white"
+              className="shadow-lg shadow-gray-800 flex items-center justify-center text-center w-20 h-20 rounded-full border-4 border-magenta-500 bg-white"
               variants={{ initial: { scale: 1, opacity: 1 }, hover: { scale: 1.1, opacity: 0.9, transition: { type: 'spring', stiffness: 300, damping: 15 } } }}
               initial="initial"
               whileHover="hover"
@@ -68,7 +68,7 @@ const Kontakt = () => {
           {/* Facebook Circle */}
           <div className="flex flex-col items-center">
             <motion.div
-              className="circle flex items-center justify-center text-center w-20 h-20 rounded-full border-4 border-magenta-500 bg-white"
+              className="shadow-lg shadow-gray-800 flex items-center justify-center text-center w-20 h-20 rounded-full border-4 border-magenta-500 bg-white"
               variants={{ initial: { scale: 1, opacity: 1 }, hover: { scale: 1.1, opacity: 0.9, transition: { type: 'spring', stiffness: 300, damping: 15 } } }}
               initial="initial"
               whileHover="hover"
@@ -83,7 +83,7 @@ const Kontakt = () => {
           {/* WhatsApp Circle */}
           <div className="flex flex-col items-center">
             <motion.div
-              className="circle flex items-center justify-center text-center w-20 h-20 rounded-full border-4 border-magenta-500 bg-white"
+              className="shadow-lg shadow-gray-800 flex items-center justify-center text-center w-20 h-20 rounded-full border-4 border-magenta-500 bg-white"
               variants={{ initial: { scale: 1, opacity: 1 }, hover: { scale: 1.1, opacity: 0.9, transition: { type: 'spring', stiffness: 300, damping: 15 } } }}
               initial="initial"
               whileHover="hover"
@@ -98,7 +98,7 @@ const Kontakt = () => {
           {/* Viber Circle */}
           <div className="flex flex-col items-center">
             <motion.div
-              className="circle flex items-center justify-center text-center w-20 h-20 rounded-full border-4 border-magenta-500 bg-white"
+              className="shadow-lg shadow-gray-800 flex items-center justify-center text-center w-20 h-20 rounded-full border-4 border-magenta-500 bg-white"
               variants={{ initial: { scale: 1, opacity: 1 }, hover: { scale: 1.1, opacity: 0.9, transition: { type: 'spring', stiffness: 300, damping: 15 } } }}
               initial="initial"
               whileHover="hover"
@@ -119,7 +119,7 @@ const Kontakt = () => {
   <iframe
     title="Google Map"
     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2781.770781095259!2d15.966247315570256!3d45.77618427910565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4765d6376c74fe4b%3A0x3231fd7e54e7c8d4!2sJaru%C5%A1%C4%8Dica%209b%2C%2010020%2C%20Zagreb%2C%20Croatia!5e0!3m2!1sen!2sus!4v1695918914145!5m2!1sen!2sus"
-    className="w-full h-64 sm:w-3/4 sm:h-80 md:w-2/3 md:h-96 lg:w-1/2 lg:h-96 xl:w-1/3 xl:h-96 border-4 border-magenta-500" // Adjust width/height for different screens
+    className="shadow-xl shadow-gray-800  w-full h-64 sm:w-3/4 sm:h-80 md:w-2/3 md:h-96 lg:w-1/2 lg:h-96 xl:w-1/3 xl:h-96 border-4 border-magenta-500" // Adjust width/height for different screens
     allowFullScreen=""
     loading="lazy"
     referrerPolicy="no-referrer-when-downgrade"

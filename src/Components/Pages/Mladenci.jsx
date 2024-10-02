@@ -45,7 +45,7 @@ const Mladenci = () => {
       
       <div className="relative w-96 h-96">
         <video
-          className="w-full h-full object-cover rounded-full border-8 border-magenta"
+          className="w-full h-full shadow-xl shadow-gray-800 object-cover rounded-full border-8 border-magenta-500"
           autoPlay
           muted
           loop 
@@ -62,7 +62,7 @@ const Mladenci = () => {
         <div className="grid justify-center justify-items-center grid-cols-1 md:grid-cols-3 gap-4 mt-10 p-5 m-10">
           {[Mladenci1, Mladenci2, Mladenci3].map((src, index) => (      
             <div key={index} onClick={() => handleImageClick(src)}>
-              <img className="max-h-96 max-w-full rounded-lg cursor-pointer shadow-lg shadow-gray-500/50" src={src} alt={`Mladenci image ${index + 1}`} />
+              <img className="max-h-96 max-w-full rounded-lg cursor-pointer shadow-2xl shadow-gray-800" src={src} alt={`Mladenci image ${index + 1}`} />
             </div>
           ))}
         </div>

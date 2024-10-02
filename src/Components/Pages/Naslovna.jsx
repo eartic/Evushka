@@ -65,7 +65,7 @@ const Naslovna = () => {
 
   return (
     <>
-      <LogoImage />
+      <LogoImage className='shadow-xl shadow-gray-800' />
       <Navbar />
       <div className='flex justify-center items-center w-full h-auto py-3'>
         <div className='w-5/6 sm:w-1/2 md:w-1/3 xs:h-5/6'>
@@ -83,7 +83,7 @@ const Naslovna = () => {
             {labels.map((label, index) => (
               <Link to={index < 5 ? '/ples' : (label === 'Najam prostora' ? '/najam' : `/${label.toLowerCase().replace(/ /g, '')}`)} key={index}>
                 <motion.div
-                  className="flex justify-center items-center xl:w-32 xl:h-32 w-32 h-32 md:w-44 md:h-44 rounded-full bg-magenta-500"
+                  className="flex justify-center shadow-lg shadow-gray-800 items-center xl:w-32 xl:h-32 w-32 h-32 md:w-44 md:h-44 rounded-full bg-magenta-500"
                   variants={{ initial: { scale: 1, opacity: 1 }, hover: { scale: 1.3, opacity: 0.9, transition: { type: 'spring', stiffness: 300, damping: 15 } } }}
                   initial="initial"
                   whileHover="hover"
@@ -128,7 +128,7 @@ const Naslovna = () => {
               href="https://www.facebook.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-20 h-20 rounded-full bg-magenta-500 flex justify-center items-center"
+              className="w-20 h-20 rounded-full shadow-lg shadow-gray-800 bg-magenta-500 flex justify-center items-center"
               whileHover={{ scale: 1.1 }}
             >
               <img src={Facebook} alt="Facebook" className="w-12 h-auto" />
@@ -137,7 +137,7 @@ const Naslovna = () => {
               href="https://www.instagram.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-20 h-20 rounded-full bg-magenta-500 flex justify-center items-center"
+              className="w-20 h-20 rounded-full  shadow-lg shadow-gray-800 bg-magenta-500 flex justify-center items-center"
               whileHover={{ scale: 1.1 }}
             >
               <img src={Instagram} alt="Instagram" className="w-12 h-auto" />
@@ -151,7 +151,7 @@ const Naslovna = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-10 p-10">
           {[Prostor1, Prostor2, Prostor3, Prostor4, Prostor5, Prostor6].map((src, index) => (
             <div key={index} onClick={() => handleImageClick(src)}>
-              <img className="h-auto max-w-full rounded-lg cursor-pointer" src={src} alt="" />
+              <img className=" shadow-2xl shadow-blue-gray-800 h-auto max-w-full rounded-lg cursor-pointer" src={src} alt="" />
             </div>
           ))}
         </div>

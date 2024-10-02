@@ -26,7 +26,7 @@ const Ples = () => {
             {data.djecji.map((item, index) => (
               <div key={index} className="flex flex-col items-center">
                 <h2 className='podnaslov'>{item.title}</h2>
-                <div className="circle flex items-center justify-center text-center w-96 h-96 rounded-full border-8 border-magenta-500 bg-white">
+                <div className="flex items-center justify-center text-center w-96 h-96 rounded-full border-8 border-magenta-500 bg-white shadow-2xl shadow-gray-800">
                   <p className="p-8 ostatakTexta">{item.description}</p>
                 </div>
               </div>
@@ -37,7 +37,7 @@ const Ples = () => {
             {data.odrasli.map((item, index) => (
               <div key={index} className="flex flex-col items-center">
                 <h2 className="podnaslov">{item.title}</h2>
-                <div className="circle flex items-center justify-center text-center w-96 h-96 rounded-full border-8 border-magenta-500 bg-white text-black shadow-lg">
+                <div className="flex items-center justify-center text-center w-96 h-96 rounded-full border-8 border-magenta-500 bg-white shadow-2xl shadow-gray-800">
                   <p className="ostatakTexta p-8">{item.description}</p>
                 </div>
               </div>

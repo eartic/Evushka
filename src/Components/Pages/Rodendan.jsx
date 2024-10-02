@@ -71,7 +71,7 @@
     {data.rodendani.map((item, index) => (
       <div key={index} className="flex flex-col items-center">
         <h2 className='podnaslov'>{item.title}</h2>
-        <div className="circle flex items-center justify-center text-center w-full max-w-96 h-96 rounded-full border-8 border-magenta-500 bg-white">
+        <div className="shadow-2xl shadow-gray-800 flex items-center justify-center text-center w-full max-w-96 h-96 rounded-full border-8 border-magenta-500 bg-white">
           <p className="p-10 ostatakTexta text-sm md:text-base" dangerouslySetInnerHTML={{ __html: item.description }} />
         </div>
       </div>
@@ -84,7 +84,7 @@
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-10 p-10">
             {[Rodendan1, Rodendan2, Rodendan3, Rodendan4, Rodendan5, Rodendan6, Rodendan7, Rodendan8, Rodendan9].map((src, index) => (
               <div key={index} onClick={() => handleImageClick(src)}>
-                <img className="h-auto max-w-full rounded-lg cursor-pointer" src={src} alt={`Rodendan image ${index + 1}`} />
+                <img className="shadow-xl shadow-gray-800 h-auto max-w-full rounded-lg cursor-pointer" src={src} alt={`Rodendan image ${index + 1}`} />
               </div>
             ))}
           </div>
