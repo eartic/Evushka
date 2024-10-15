@@ -102,7 +102,7 @@ const Naslovna = () => {
         <div className='grid gap-2 grid-cols-1 md:grid-cols-3 w-full h-auto'>
           <div className='flex flex-col items-center text-center'>
             <h2 className='podnaslov'>Radno vrijeme:<br /></h2>
-            <p className='ostatakTexta'>Ponedjeljak - Petak: <br />8:30 - 22:00 <br />Subota - Nedjelja:<br /> 9:00 - 21:00</p>
+            <p className='ostatakTexta'>Ponedjeljak - Petak: <br />09:00 - 22:00 <br />Subota - Nedjelja:<br /> 10:00 - 21:00</p>
           </div>
           <div className='flex flex-col items-center text-center'>
             <h2 className='podnaslov'>Kontakt: <br /> <EmailLink /></h2>
