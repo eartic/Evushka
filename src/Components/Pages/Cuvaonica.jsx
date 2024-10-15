@@ -51,8 +51,8 @@ const Cuvaonica = () => {
         </div>
         <div className="mx-auto max-w-4xl p-3 flex justify-center text-center ostatakTexta">
           <p>
-            Pon - Pet =  €<br />
-            Pon - Sri - Pet =  €
+            Pon - Pet = 180€ <br />
+            Pon • Sri • Pet = 110€
           </p>
         </div>
       </section>
