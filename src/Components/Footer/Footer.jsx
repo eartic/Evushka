@@ -22,8 +22,8 @@ const Footer = () => {
         <div className="flex flex-col justify-center items-center space-y-2">
           <p className="text-center">
             Radno vrijeme: <br />
-            Pon-Pet: 8:30-22:00 <br />
-            Sub-Ned: 9-21
+            Pon-Pet: 9:00-22:00 <br />
+            Sub-Ned: 10-21
           </p>
           <img src={Sat} alt="Clock" className="w-9 h-9" />
         </div>
