@@ -11,16 +11,16 @@ const Kontakt = () => {
       <LogoImage />
       <Navbar />
 
-      {/* Contact Section */}
+      
       <section>
         <div className="flex justify-center items-center mt-5">
           <h2 className="podnaslov">Kontaktirajte nas:</h2>
         </div>
 
-        {/* Contact Icons */}
+        
         <div className="grid grid-cols-2 gap-2 mx-4 p-2 md:grid-cols-6 md:mx-32">
 
-          {/* Email Circle */}
+        
           <div className="flex flex-col items-center">
             <motion.div
               className="shadow-lg shadow-gray-800 flex items-center justify-center text-center w-20 h-20 rounded-full border-4 border-magenta-500 bg-white"
@@ -35,7 +35,7 @@ const Kontakt = () => {
             <p className="mt-2">Email</p>
           </div>
 
-          {/* Phone Circle */}
+         
           <div className="flex flex-col items-center">
             <motion.div
               className="shadow-lg shadow-gray-800 flex items-center justify-center text-center w-20 h-20 rounded-full border-4 border-magenta-500 bg-white"
@@ -50,7 +50,7 @@ const Kontakt = () => {
             <p className="mt-2">Telefon</p>
           </div>
 
-          {/* Instagram Circle */}
+          
           <div className="flex flex-col items-center">
             <motion.div
               className="shadow-lg shadow-gray-800 flex items-center justify-center text-center w-20 h-20 rounded-full border-4 border-magenta-500 bg-white"
@@ -65,7 +65,7 @@ const Kontakt = () => {
             <p className="mt-2">Instagram</p>
           </div>
 
-          {/* Facebook Circle */}
+        
           <div className="flex flex-col items-center">
             <motion.div
               className="shadow-lg shadow-gray-800 flex items-center justify-center text-center w-20 h-20 rounded-full border-4 border-magenta-500 bg-white"
@@ -80,7 +80,7 @@ const Kontakt = () => {
             <p className="mt-2">Facebook</p>
           </div>
 
-          {/* WhatsApp Circle */}
+         
           <div className="flex flex-col items-center">
             <motion.div
               className="shadow-lg shadow-gray-800 flex items-center justify-center text-center w-20 h-20 rounded-full border-4 border-magenta-500 bg-white"
@@ -95,7 +95,7 @@ const Kontakt = () => {
             <p className="mt-2">WhatsApp</p>
           </div>
 
-          {/* Viber Circle */}
+         
           <div className="flex flex-col items-center">
             <motion.div
               className="shadow-lg shadow-gray-800 flex items-center justify-center text-center w-20 h-20 rounded-full border-4 border-magenta-500 bg-white"
@@ -113,7 +113,7 @@ const Kontakt = () => {
         </div>
       </section>
 
-      {/* Google Maps Section */}
+  
       <section className="mt-10">
       <div className="flex justify-center mt-8">
   <iframe

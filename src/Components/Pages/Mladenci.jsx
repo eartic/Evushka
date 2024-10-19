@@ -11,8 +11,8 @@ import PlesMladenci from '../Ples_slide_show/Ples_Slike/Ples1.png';
 
 const Mladenci = () => {
   const [selectedImage, setSelectedImage] = useState(null);
-  const [isPlaying, setIsPlaying] = useState(false); // State for video playing
-  const videoRef = useRef(null); // Create a ref for the video
+  const [isPlaying, setIsPlaying] = useState(false); 
+  const videoRef = useRef(null); 
 
   const handleImageClick = (src) => {
     setSelectedImage(src);
@@ -22,22 +22,22 @@ const Mladenci = () => {
     setSelectedImage(null);
   };
 
-  // Function to handle play button click
+
   const handlePlayPause = () => {
     if (videoRef.current) {
       if (isPlaying) {
         videoRef.current.pause();
       } else {
         videoRef.current.play();
-        videoRef.current.volume = 0.5; // Set the volume to half
+        videoRef.current.volume = 0.5; 
       }
-      setIsPlaying(!isPlaying); // Toggle playing state
+      setIsPlaying(!isPlaying); 
     }
   };
 
   useEffect(() => {
     if (videoRef.current) {
-      videoRef.current.volume = 0.5; // Ensure volume is set to half when the component mounts
+      videoRef.current.volume = 0.5; 
     }
   }, []);
 
@@ -66,17 +66,17 @@ const Mladenci = () => {
         <div className="flex justify-center items-center">
           <div className="relative w-96 h-96">
             <video
-              ref={videoRef} // Attach the ref to the video element
+              ref={videoRef} 
               className="w-full h-full shadow-xl shadow-gray-800 object-cover rounded-full border-8 border-magenta-500"
               loop 
               playsInline
-              onClick={handlePlayPause} // Play or pause when video is clicked
+              onClick={handlePlayPause} 
             >
               <source src={VideoMladenci} type="video/mp4" />
               Your browser does not support the video tag.
             </video>
 
-            {/* Play button overlay */}
+            
             {!isPlaying && (
               <button
                 onClick={handlePlayPause}

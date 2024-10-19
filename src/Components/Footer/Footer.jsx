@@ -18,17 +18,17 @@ const Footer = () => {
         {/* Logo */}
         <img src={LogoFooter} alt="Logo" className="w-3/4" />
 
-        {/* Working Hours Section */}
+      
         <div className="flex flex-col justify-center items-center space-y-2">
           <p className="text-center">
+          Vl. Ivana Žaki, obrt za usluge <br /> <br />
             Radno vrijeme: <br />
             Pon-Pet: 9:00-22:00 <br />
             Sub-Ned: 10:00-21:00
           </p>
-          <img src={Sat} alt="Clock" className="w-9 h-9" />
         </div>
 
-            {/*Kontakt mail*/}
+           
             <div className="flex flex-col justify-center items-center space-y-2">
             <p className="text-center">
               Kontakt: <br />
@@ -39,7 +39,7 @@ const Footer = () => {
           </a>
             </div>
 
-        {/*Kontakt mail*/}
+       
         <div className="flex flex-col justify-center items-center space-y-2">
             <p className="text-center">
               Kontakt telefon: <br />
@@ -49,7 +49,7 @@ const Footer = () => {
             <img src={Phone} alt="Phone" />
           </a>
             </div>
-        {/*Adresa*/}
+        
         <div className="flex flex-col justify-center items-center space-y-2"> 
         <p className="text-center">
         Jaruščica 9b, <br />10020, Zagreb, Croatia</p>
