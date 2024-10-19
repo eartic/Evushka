@@ -58,8 +58,8 @@ const Kontakt = () => {
               initial="initial"
               whileHover="hover"
             >
-              <a href="https://www.instagram.com/yourusername" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-                <FaInstagram className="text-3xl text-magenta-500" />
+    <a href="https://www.instagram.com/evushka_igraonica_rodendaonica/profilecard/?igsh=azhzNzRtYnR6NjR2" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+    <FaInstagram className="text-3xl text-magenta-500" />
               </a>
             </motion.div>
             <p className="mt-2">Instagram</p>
@@ -73,8 +73,8 @@ const Kontakt = () => {
               initial="initial"
               whileHover="hover"
             >
-              <a href="https://www.facebook.com/yourusername" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
-                <FaFacebook className="text-3xl text-magenta-500" />
+    <a href="https://www.facebook.com/people/Plesna-igraonica-i-ro%C4%91endaonica-Evushka/61562570052064/?rdid=KnEJsKf2TdYp672i&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2FmLJNRGucr7kucm8z%2F" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+    <FaFacebook className="text-3xl text-magenta-500" />
               </a>
             </motion.div>
             <p className="mt-2">Facebook</p>

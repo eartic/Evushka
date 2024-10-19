@@ -125,18 +125,15 @@ const Naslovna = () => {
         <div className="flex justify-center items-center mt-6">
           <div className="grid grid-cols-2 gap-4">
             <motion.a
-              href="https://www.facebook.com"
-              target="_blank"
-              rel="noopener noreferrer"
+     href="https://www.facebook.com/people/Plesna-igraonica-i-ro%C4%91endaonica-Evushka/61562570052064/?rdid=KnEJsKf2TdYp672i&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2FmLJNRGucr7kucm8z%2F" target="_blank" rel="noopener noreferrer" aria-label="Facebook"
               className="w-20 h-20 rounded-full shadow-lg shadow-gray-800 bg-magenta-500 flex justify-center items-center"
               whileHover={{ scale: 1.1 }}
             >
               <img src={Facebook} alt="Facebook" className="w-12 h-auto" />
             </motion.a>
             <motion.a
-              href="https://www.instagram.com"
-              target="_blank"
-              rel="noopener noreferrer"
+                 href="https://www.instagram.com/evushka_igraonica_rodendaonica/profilecard/?igsh=azhzNzRtYnR6NjR2" target="_blank" rel="noopener noreferrer" aria-label="Instagram"
+
               className="w-20 h-20 rounded-full  shadow-lg shadow-gray-800 bg-magenta-500 flex justify-center items-center"
               whileHover={{ scale: 1.1 }}
             >
