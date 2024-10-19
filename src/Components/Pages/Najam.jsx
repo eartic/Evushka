@@ -93,7 +93,8 @@ const Najam = () => {
       <div className="flex flex-col items-center">
         <div className="shadow-xl shadow-gray-800 flex items-center justify-center text-center w-96 h-96 rounded-full border-8 border-magenta-500 bg-white">
           <p className="p-10 ostatakTexta text-sm md:text-base">
-            Cjena najma prostora za 20€/h
+            Osnovna cijena najma prostora <br />
+            • 18€/h
           </p>
         </div>
       </div>
