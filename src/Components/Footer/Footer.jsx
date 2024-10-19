@@ -1,7 +1,6 @@
 import React from 'react';
 import LogoFooter from '/src/assets/logo.png';
 import LogoMail from '/src/assets/mail.png';
-import Sat from '/src/assets/sat.png';
 import Phone from '/src/assets/phone.png';
 import Map from '/src/assets/map.png';
 
@@ -15,7 +14,7 @@ const Footer = () => {
       <hr className="border-t-4 border-solid border-magenta-500 my-6" />
       <p className='uvodniParagraph text-center mb-5'>Ne znate što za sljedeći rođendan vašeg djeteta? Kontaktirajte nas!</p>
       <div className="grid grid_kolona  grid-cols-5 gap-2">
-        {/* Logo */}
+      
         <img src={LogoFooter} alt="Logo" className="w-3/4" />
 
       
