@@ -23,7 +23,7 @@ const Footer = () => {
           <p className="text-center">
             Radno vrijeme: <br />
             Pon-Pet: 9:00-22:00 <br />
-            Sub-Ned: 10-21
+            Sub-Ned: 10:00-21:00
           </p>
           <img src={Sat} alt="Clock" className="w-9 h-9" />
         </div>

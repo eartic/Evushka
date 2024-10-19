@@ -35,7 +35,7 @@ const PhoneLink = () => {
   };
 
   return (
-    <p className='ostatakTexta' onClick={handleClick} style={{ cursor: 'pointer', color: 'darkmagenta', textDecoration: 'none', fontSize: '15px' }}>
+    <p className='ostatakTexta' onClick={handleClick} style={{ cursor: 'pointer', color: 'darkmagenta', textDecoration: 'none'}}>
       099 591 3887
     </p>
   );

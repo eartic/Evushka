@@ -43,11 +43,11 @@ const Kontakt = () => {
               initial="initial"
               whileHover="hover"
             >
-              <a href="tel:+1234567890" aria-label="Phone">
-                <FaPhone className="text-3xl text-magenta-500" />
+<a href="tel:+385995913887" aria-label="Phone">
+<FaPhone className="text-3xl text-magenta-500" />
               </a>
             </motion.div>
-            <p className="mt-2">Phone</p>
+            <p className="mt-2">Telefon</p>
           </div>
 
           {/* Instagram Circle */}
@@ -88,8 +88,8 @@ const Kontakt = () => {
               initial="initial"
               whileHover="hover"
             >
-              <a href="https://wa.me/yourphonenumber" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
-                <FaWhatsapp className="text-3xl text-magenta-500" />
+<a href="https://wa.me/385995913887" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+<FaWhatsapp className="text-3xl text-magenta-500" />
               </a>
             </motion.div>
             <p className="mt-2">WhatsApp</p>
@@ -103,8 +103,8 @@ const Kontakt = () => {
               initial="initial"
               whileHover="hover"
             >
-              <a href="viber://chat?number=yourphonenumber" target="_blank" rel="noopener noreferrer" aria-label="Viber">
-                <FaViber className="text-3xl text-magenta-500" />
+<a href="viber://contact?number=385995913887" target="_blank" rel="noopener noreferrer" aria-label="Viber">
+<FaViber className="text-3xl text-magenta-500" />
               </a>
             </motion.div>
             <p className="mt-2">Viber</p>

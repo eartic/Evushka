@@ -27,7 +27,7 @@ const Ples = () => {
               <div key={index} className="flex flex-col items-center">
                 <h2 className='podnaslov'>{item.title}</h2>
                 <div className="flex items-center justify-center text-center w-96 h-96 rounded-full border-8 border-magenta-500 bg-white shadow-2xl shadow-gray-800">
-                  <p className="p-8 ostatakTexta">{item.description}</p>
+                <p className="ostatakTexta mt-6 p-8" dangerouslySetInnerHTML={{ __html: item.description }}></p>
                 </div>
               </div>
             ))}
@@ -38,7 +38,7 @@ const Ples = () => {
               <div key={index} className="flex flex-col items-center">
                 <h2 className="podnaslov">{item.title}</h2>
                 <div className="flex items-center justify-center text-center w-96 h-96 rounded-full border-8 border-magenta-500 bg-white shadow-2xl shadow-gray-800">
-                  <p className="ostatakTexta p-8">{item.description}</p>
+                <p className="ostatakTexta p-8 mt-6" dangerouslySetInnerHTML={{ __html: item.description }}></p>
                 </div>
               </div>
             ))}
