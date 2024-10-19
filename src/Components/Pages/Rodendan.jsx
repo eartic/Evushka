@@ -83,14 +83,12 @@ const Rodendan = () => {
       </div>
 
       <section className="mt-10">
-        <div className="flex justify-items-center justify-center">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-4 mt-10 p-10">
           {[Rodendan1, Rodendan2, Rodendan3, Rodendan4, Rodendan5, Rodendan9, Rodendan6,Madionicar3, Rodendan8, Rodendan7, Madionicar2 ].map((src, index) => (
             <div key={index} onClick={() => handleImageClick(src)}>
               <img className="shadow-xl shadow-gray-800 h-auto max-w-80 rounded-lg cursor-pointer" src={src} alt={`Rodendan image ${index + 1}`} />
             </div>
           ))}
-        </div>
         </div>
       </section>
 
