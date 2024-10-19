@@ -4,7 +4,7 @@ import Footer from '../Footer/Footer';
 import LogoImage from '/src/Components/Banner/logo.jsx';
 import Prostor4 from '/src/assets/prostor/prostor4.png'; 
 import Prostor6 from '/src/assets/prostor/prostor6.png'; 
-import Prostor1 from '/src/assets/prostor/prostor1.jpg'; 
+import Prostor10 from '/src/assets/prostor/prostor10.png'; 
 
 const Najam = () => {
   return (
@@ -57,7 +57,7 @@ const Najam = () => {
                 </p>
               </div>
               <div>
-                <img src={Prostor1} alt="dječja soba" className='w-96 h-auto shadow-xl shadow-gray-800' />
+                <img src={Prostor10} alt="dječja soba" className='w-96 h-auto shadow-xl shadow-gray-800' />
               </div>
             </div>
           </div>
