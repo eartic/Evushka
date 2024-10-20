@@ -83,7 +83,7 @@ const Naslovna = () => {
             {labels.map((label, index) => (
               <Link to={index < 5 ? '/ples' : (label === 'Najam prostora' ? '/najam' : `/${label.toLowerCase().replace(/ /g, '')}`)} key={index}>
                 <motion.div
-                  className="flex justify-center shadow-lg shadow-gray-800 items-center xl:w-32 xl:h-32 w-32 h-32 md:w-44 md:h-44 rounded-full bg-magenta-500"
+                  className="flex justify-center shadow-lg shadow-magenta-500 items-center xl:w-32 xl:h-32 w-32 h-32 md:w-44 md:h-44 rounded-full bg-magenta-500"
                   variants={{ initial: { scale: 1, opacity: 1 }, hover: { scale: 1.3, opacity: 0.9, transition: { type: 'spring', stiffness: 300, damping: 15 } } }}
                   initial="initial"
                   whileHover="hover"
@@ -126,7 +126,7 @@ const Naslovna = () => {
           <div className="grid grid-cols-2 gap-4">
             <motion.a
      href="https://www.facebook.com/people/Plesna-igraonica-i-ro%C4%91endaonica-Evushka/61562570052064/?rdid=KnEJsKf2TdYp672i&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2FmLJNRGucr7kucm8z%2F" target="_blank" rel="noopener noreferrer" aria-label="Facebook"
-              className="w-20 h-20 rounded-full shadow-lg shadow-gray-800 bg-magenta-500 flex justify-center items-center"
+              className="w-20 h-20 rounded-full shadow-lg shadow-lavender-500 bg-magenta-500 flex justify-center items-center"
               whileHover={{ scale: 1.1 }}
             >
               <img src={Facebook} alt="Facebook" className="w-12 h-auto" />
@@ -134,7 +134,7 @@ const Naslovna = () => {
             <motion.a
                  href="https://www.instagram.com/evushka_igraonica_rodendaonica/profilecard/?igsh=azhzNzRtYnR6NjR2" target="_blank" rel="noopener noreferrer" aria-label="Instagram"
 
-              className="w-20 h-20 rounded-full  shadow-lg shadow-gray-800 bg-magenta-500 flex justify-center items-center"
+              className="w-20 h-20 rounded-full  shadow-lg shadow-lavender-500 bg-magenta-500 flex justify-center items-center"
               whileHover={{ scale: 1.1 }}
             >
               <img src={Instagram} alt="Instagram" className="w-12 h-auto" />
@@ -148,7 +148,7 @@ const Naslovna = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-10 p-10">
           {[Prostor1, Prostor2, Prostor3, Prostor4, Prostor5, Prostor6].map((src, index) => (
             <div key={index} onClick={() => handleImageClick(src)}>
-              <img className=" shadow-2xl shadow-blue-gray-800 h-auto max-w-full rounded-lg cursor-pointer" src={src} alt="" />
+              <img className=" shadow-2xl shadow-lavender-500 h-auto max-w-full rounded-lg cursor-pointer" src={src} alt="" />
             </div>
           ))}
         </div>

@@ -12,6 +12,11 @@ module.exports = withMT({
         magenta: {
           500: '#d74399', // Custom magenta color
         },
+        
+            lavender: {
+              500: '#a11677',
+            }, 
+        
       },
     },
   },

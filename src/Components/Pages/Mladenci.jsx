@@ -67,7 +67,7 @@ const Mladenci = () => {
           <div className="relative w-96 h-96">
             <video
               ref={videoRef} 
-              className="w-full h-full shadow-xl shadow-gray-800 object-cover rounded-full border-8 border-magenta-500"
+              className="w-full h-full shadow-xl shadow-lavender-500 object-cover rounded-full border-8 border-magenta-500"
               loop 
               playsInline
               onClick={handlePlayPause} 
@@ -100,7 +100,7 @@ const Mladenci = () => {
         <div className="grid justify-center justify-items-center grid-cols-1 md:grid-cols-4 gap-4 mt-10 p-5 m-10">
           {[Mladenci4,Mladenci1, Mladenci2, Mladenci3].map((src, index) => (      
             <div key={index} onClick={() => handleImageClick(src)}>
-              <img className="w-96 xl:h-5/6 h-auto rounded-lg cursor-pointer shadow-2xl shadow-gray-800" src={src} alt={`Mladenci image ${index + 1}`} />
+              <img className="w-96 xl:h-5/6 h-auto rounded-lg cursor-pointer shadow-2xl shadow-lavender-500" src={src} alt={`Mladenci image ${index + 1}`} />
             </div>
           ))}
         </div>

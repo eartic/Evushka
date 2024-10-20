@@ -12,9 +12,9 @@ const PlesSlideShow = () => {
   useEffect(() => {
     const timer = setInterval(() => {
       setActiveIndex((prevIndex) => (prevIndex + 1) % slides.length);
-    }, 5000); // Change slide every 5 seconds
+    }, 5000); 
 
-    return () => clearInterval(timer); // Clean up on unmount
+    return () => clearInterval(timer); 
   }, []);
 
   const handlePrev = () => {
@@ -30,7 +30,7 @@ const PlesSlideShow = () => {
       <div className="relative w-full max-w-4xl rounded-xl overflow-hidden">
         <img src={slides[activeIndex]} alt={`Ples Slide ${activeIndex + 1}`} className="h-full w-full object-cover" />
         
-        {/* Clickable area for previous slide */}
+        
         <div
           className="absolute left-0 top-0 h-full w-1/2 cursor-pointer z-10"
           onClick={handlePrev}
@@ -38,7 +38,6 @@ const PlesSlideShow = () => {
           role="button"
         />
         
-        {/* Clickable area for next slide */}
         <div
           className="absolute right-0 top-0 h-full w-1/2 cursor-pointer z-10"
           onClick={handleNext}

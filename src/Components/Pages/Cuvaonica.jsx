@@ -15,22 +15,22 @@ const Cuvaonica = () => {
       </div>
 
       <div className="flex flex-col">
-        <div className="grid grid-cols-1 md:grid-cols-1 xl:grid-cols-2 p-7  mt-4">
+        <div className="grid grid-cols-1 md:grid-cols-1 xl:grid-cols-2 p-3  mt-4">
           <div className="flex flex-col items-center">
             <h2 className='podnaslov'>Kada?</h2>
-            <div className="shadow-lg shadow-gray-800 flex items-center justify-center text-center w-80 h-80 rounded-full border-8 border-magenta-500 bg-white">
+            <div className="shadow-lg shadow-lavender-500 flex items-center justify-center text-center w-80 h-80 rounded-full border-8 border-magenta-500 bg-white">
               <p className="p-10 ostatakTexta text-sm md:text-base">Pon-Sri-Pet <br /> ili <br /> svaki dan <br />9:00-12:30</p>
             </div>
           </div>
           <div className="flex flex-col items-center">
             <h2 className='podnaslov'>Koji uzrast?</h2>
-            <div className="shadow-lg shadow-gray-800 flex items-center justify-center text-center w-80 h-80 rounded-full border-8 border-magenta-500 bg-white">
+            <div className="shadow-lg shadow-lavender-500 flex items-center justify-center text-center w-80 h-80 rounded-full border-8 border-magenta-500 bg-white">
               <p className="p-10 ostatakTexta text-sm md:text-base">Za djecu od 2,5 do 7 godina</p>
             </div>
           </div>
           <div className="flex flex-col items-center mt-4" >
             <h2 className='podnaslov'>Aktivnosti</h2>
-            <div className="shadow-lg shadow-gray-800e flex items-center justify-center text-center w-80 h-80 rounded-full border-8 border-magenta-500 bg-white">
+            <div className="shadow-lg shadow-lavender-500 flex items-center justify-center text-center w-80 h-80 rounded-full border-8 border-magenta-500 bg-white">
               <p className="p-10 ostatakTexta text-sm md:text-base">Jutarnje razgibavanje ili poligon <br /> Ples i pjevanje <br /> Čitanje priče <br />
                 Likovno stvaralaštvo <br /> Kreativna igra <br /> Voćna užina <br /> Mogućnost izlaska u zajednički park naše zgrade
               </p>
@@ -38,7 +38,7 @@ const Cuvaonica = () => {
           </div>
           <div className="flex flex-col items-center mt-4">
             <h2 className='podnaslov'>Tko je s nama?</h2>
-            <div className="shadow-lg shadow-gray-800 flex items-center justify-center text-center w-80 h-80 rounded-full border-8 border-magenta-500 bg-white">
+            <div className="shadow-lg shadow-lavender-500 flex items-center justify-center text-center w-80 h-80 rounded-full border-8 border-magenta-500 bg-white">
               <p className="p-10 ostatakTexta text-sm md:text-base">Stručno vodstvo - <br /> tete odgajateljice</p>
             </div>
           </div>
