@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
+<meta name='description' content='navigacija Evushka, naslovna, ples, kutak za mladence, rođendani, jutarnja čuvaonica za djecu, najam, pravilnik, kontakt' />
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);

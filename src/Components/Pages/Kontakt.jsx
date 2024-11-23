@@ -4,17 +4,30 @@ import Navbar from '../Navbar/Navbar';
 import Footer from '../Footer/Footer';
 import { motion } from 'framer-motion';
 import LogoImage from '../Banner/logo.jsx';
+import { Helmet } from 'react-helmet';
 
 const Kontakt = () => {
   return (
     <>
+    <Helmet>
+      <title>Kontakt podaci plesne igraonice i rođendaonice - Evushka</title>
+      <meta name='description' content='Stupite u kontakt sa našim osobljem i dogovorite Vaš sljedeći termin!'/>
+      <meta name="keywords" content="Kontakt Evushka, broj Evushka, kontakt najam prostora Zagreb, email igraonice Zagreb, kontakt ples za djecu, kontakt rođendaonica Zagreb" />
+      <meta name="robots" content="index, follow" />
+      <link rel="canonical" href="https://evushka.com/kontakt" />
+      <meta property="og:title" content="Kontakt plesne igraonice i rođendaonice Evushka" />
+        <meta property="og:description" content="Kako dogovoriti svoj sljedeći termin u plesnoj igraonici i rođendaonici Evushka" />
+        <meta property="og:image" content="https://evushka.com/assets/logo_djeca-CDRpXGzM.jpg" />
+        <meta property="og:url" content="https://evushka.com/kontakt" />
+        <meta property="og:type" content="website" />
+      </Helmet>
       <LogoImage />
       <Navbar />
 
       
       <section>
         <div className="flex justify-center items-center mt-5">
-          <h2 className="podnaslov">Kontaktirajte nas:</h2>
+          <h2 alt='Kontaktirajte Evushku' className="podnaslov">Kontaktirajte nas:</h2>
         </div>
 
         
@@ -58,7 +71,7 @@ const Kontakt = () => {
               initial="initial"
               whileHover="hover"
             >
-    <a href="https://www.instagram.com/evushka_igraonica_rodendaonica/profilecard/?igsh=azhzNzRtYnR6NjR2" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+    <a href="https://www.instagram.com/evushka_igraonica_rodendaonica/profilecard/?igsh=azhzNzRtYnR6NjR2" target="_blank" rel="noopener noreferrer" aria-label="Instagram" alt='Instagram profil Plesna igraonica i rođendaonica- Evushka'>
     <FaInstagram className="text-3xl text-magenta-500" />
               </a>
             </motion.div>
@@ -73,7 +86,7 @@ const Kontakt = () => {
               initial="initial"
               whileHover="hover"
             >
-    <a href="https://www.facebook.com/people/Plesna-igraonica-i-ro%C4%91endaonica-Evushka/61562570052064/?rdid=KnEJsKf2TdYp672i&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2FmLJNRGucr7kucm8z%2F" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+    <a href="https://www.facebook.com/people/Plesna-igraonica-i-ro%C4%91endaonica-Evushka/61562570052064/?rdid=KnEJsKf2TdYp672i&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2FmLJNRGucr7kucm8z%2F" target="_blank" rel="noopener noreferrer" aria-label="Facebook" alt='Facebook profil Plesna igraonica i rođendaonica- Evushka'>
     <FaFacebook className="text-3xl text-magenta-500" />
               </a>
             </motion.div>
@@ -88,7 +101,7 @@ const Kontakt = () => {
               initial="initial"
               whileHover="hover"
             >
-<a href="https://wa.me/385995913887" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+<a href="https://wa.me/385995913887" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" alt='Whatsapp kontakt Plesna igraonica i rođendaonica- Evushka'>
 <FaWhatsapp className="text-3xl text-magenta-500" />
               </a>
             </motion.div>
@@ -103,7 +116,7 @@ const Kontakt = () => {
               initial="initial"
               whileHover="hover"
             >
-<a href="viber://contact?number=385995913887" target="_blank" rel="noopener noreferrer" aria-label="Viber">
+<a href="viber://contact?number=385995913887" target="_blank" rel="noopener noreferrer" aria-label="Viber" alt='Viber kontakt Plesna igraonica i rođendaonica- Evushka'>
 <FaViber className="text-3xl text-magenta-500" />
               </a>
             </motion.div>
@@ -123,6 +136,7 @@ const Kontakt = () => {
     allowFullScreen=""
     loading="lazy"
     referrerPolicy="no-referrer-when-downgrade"
+    alt='Google Maps lokacija Plesna igraonica i rođendaonica- Evushka'
   ></iframe>
 </div>
       </section>

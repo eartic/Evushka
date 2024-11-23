@@ -16,8 +16,22 @@ import Madionicar2 from '/src/assets/rodendan/madionicar_1.jpg';
 import Madionicar3 from '/src/assets/rodendan/madionicar_2.jpg';
 import Madionicar from '/src/assets/rodendan/madionicar.jpg';
 import Djeca from '/src/assets/logo_djeca.jpg';
+import { Helmet } from "react-helmet";
 
 const Rodendan = () => {
+<Helmet>
+  <title>Rođendani-Evushka</title>
+  <meta name="description" content="Proslavite nezaboravan dječji rođendan u Evushki uz mađioničara, personalizirani program igara i više od 120 m² prostora. Idealno za djecu i roditelje." />
+  <meta name="keywords" content="rođendani Evushka, rođendani Zagreb, proslava rođendana, dječji rođendan Lanište, blizu Arena Centra, najam prostora za proslavu dječjih rođendana u Zagrebu " />
+  <meta name="robots" content="index, follow" />
+      <link rel="canonical" href="https://evushka.com/ro%C4%91endani" />
+      <meta property="og:title" content="Proslave rođendana u Zagrebu-Evushka" />
+        <meta property="og:description" content="Proslavite rođendan u Zagrebu u plesnoj igraonici i rođendaonici- Evushka" />
+        <meta property="og:image" content="https://evushka.com/assets/logo_djeca-CDRpXGzM.jpg" />
+        <meta property="og:url" content="https://evushka.com/ro%C4%91endani" />
+        <meta property="og:type" content="website" />
+</Helmet>
+
   const [data, setData] = useState(null);
   const [selectedImage, setSelectedImage] = useState(null);
 
@@ -40,7 +54,7 @@ const Rodendan = () => {
   return (
     <>
       <Navbar />
-      <h1 className="pt-10 text-center">Rođendani</h1>
+      <h1 alt='proslava rođendana u plesnoj igraonici i rođendaonici Evuska' className="pt-10 text-center">Rođendani</h1>
       <div className='flex justify-center items-center w-full h-auto py-3'>
         <div className='w-5/6 sm:w-1/2 md:w-1/3 xs:h-5/6'>
           <img src={Djeca} alt="logo sa slikom djece" className='w-full h-auto' />
@@ -83,7 +97,7 @@ const Rodendan = () => {
       </div>
 
       <section className="flex justify-center justify-items-center mt-2">
-        <div className="grid grid-cols-1 md:grid-cols-43 gap-4 mt-10 p-3">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-4 mt-10 p-3">
           {[Rodendan1, Rodendan2, Rodendan3, Rodendan4, Rodendan5, Rodendan9, Rodendan6,Madionicar3, Rodendan8, Rodendan7, Madionicar2 ].map((src, index) => (
             <div key={index} onClick={() => handleImageClick(src)}>
               <img className="shadow-xl shadow-lavender-500 h-auto max-w-80 rounded-lg cursor-pointer" src={src} alt={`Rodendan image ${index + 1}`} />

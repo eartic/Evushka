@@ -11,11 +11,22 @@ import Najam from './Components/Pages/Najam.jsx';
 import Pravilnik from './Components/Pages/Pravilnik.jsx';
 import Kontakt from './Components/Pages/Kontakt.jsx';
 import ScrollToTop from './ScrollToTop'; 
+import { Helmet } from 'react-helmet';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <Router basename="/Evushka">
+    <Router basename="/">
       <ScrollToTop /> 
+      <Helmet>
+        <meta name="description" content="Plesna igraonica i rođendaonica- Evushka - Ples za djecu, tečajevi za odrasle, team building, rođendani i najam prostora, tečaj plesa za parove, proslave rođendana." />
+        <meta name="keywords" content="Evushka, ples, djeca, tečaj plesova, rođendani, Zagreb, najam prostora, kontakt, čuvaonica, mladenci, najam, pravilnik" />
+        <meta name="robots" content="index, follow" />
+        <meta property="og:title" content="Evushka" />
+        <meta property="og:description" content="Evushka" />
+        <meta property="og:image" content="https://evushka.com/assets/logo_djeca-CDRpXGzM.jpg" />
+        <meta property="og:url" content="https://evushka.com/" />
+        <meta property="og:type" content="website" />
+      </Helmet>
       <Routes>
         <Route path="/" element={<Naslovna />} />
         <Route path="/ples" element={<Ples />} />

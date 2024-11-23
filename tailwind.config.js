@@ -20,6 +20,6 @@ module.exports = withMT({
       },
     },
   },
-  darkMode: 'class', // Use 'class' for dark mode control
+  darkMode: 'class', 
   plugins: [],
 });

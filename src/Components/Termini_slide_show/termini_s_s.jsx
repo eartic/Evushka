@@ -27,22 +27,22 @@ const TerminiSlideshow = () => {
       >
         <img
           src={Termini1}
-          alt="Termini 1"
+          alt="Aktualni termini plesna rekreacija za djecu (5-7 godina)"
           className="h-full w-full object-cover"
         />
         <img
           src={Termini2}
-          alt="Termini 2"
+          alt="Aktualni termini  plesna rekreacija za djecu (7+ godina)"
           className="h-full w-full object-cover"
         />
         <img
           src={Termini3}
-          alt="Termini 3"
+          alt="Aktualni termini Ladies latin"
           className="h-full w-full object-cover"
         />
          <img
           src={Termini4}
-          alt="Termini 4"
+          alt="Aktualni termini za odrasle, tečaj društvenih plesova za odrasle"
           className="h-full w-full object-cover"
           />
       </Carousel>

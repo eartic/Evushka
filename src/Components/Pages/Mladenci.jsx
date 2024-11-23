@@ -8,8 +8,23 @@ import Mladenci3 from '../../assets/mladenci/mladenci3.jpg';
 import Mladenci4 from '../../assets/mladenci/mladenci.jpg';
 import VideoMladenci from '../../assets/mladenci/PlesMladenci.mp4';
 import PlesMladenci from '../Ples_slide_show/Ples_Slike/Ples1.png'; 
+import { Helmet } from "react-helmet";
 
 const Mladenci = () => {
+<Helmet>
+<title>Kutak za mladence-Evushka</title>
+<meta name="description" content="Neka vaš prvi ples bude nezaboravan uz personalizirani plesni tečaj Evushka. Plesna koreografija prilagođena vašim željama." />
+<meta name="keywords" content="Evushka mladenci, ples za svadbu, tečaj za prvi ples, Plesni tečaj za mladence Zagreb" />
+<meta name="robots" content="index, follow" />
+      <link rel="canonical" href="https://evushka.com/kutakZaMladence" />
+      <meta property="og:title" content="Ples za mladence- Evushka" />
+        <meta property="og:description" content="Naučite plesati uz profesionalnog instruktora plesa u Zagrebu" />
+        <meta property="og:image" content="https://evushka.com/assets/Ples1-HuTPZNS4.png" />
+        <meta property="og:url" content="https://evushka.com/kutakZaMladence" />
+        <meta property="og:type" content="website" />
+  
+</Helmet>
+
   const [selectedImage, setSelectedImage] = useState(null);
   const [isPlaying, setIsPlaying] = useState(false); 
   const videoRef = useRef(null); 
@@ -53,7 +68,7 @@ const Mladenci = () => {
             alt="Ples mladenci"
             className="w-full max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-2xl h-auto"/>
         </div>
-        <p className="uvodniParagraph text-center">
+        <p alt='dragi mladenci, neka vaš prvi ples bude poseban' className="uvodniParagraph text-center">
           Dragi mladenci, neka Vaš prvi ples bude poseban ❤️
         </p>
       </div>
@@ -65,7 +80,7 @@ const Mladenci = () => {
       <section>
         <div className="flex justify-center items-center">
           <div className="relative w-96 h-96">
-            <video
+            <video alt='video svadbe mladenaca u plesu savršena koreografija personalizirana uz našu stručnu pomoć'
               ref={videoRef} 
               className="w-full h-full shadow-xl shadow-lavender-500 object-cover rounded-full border-8 border-magenta-500"
               loop 
@@ -97,7 +112,7 @@ const Mladenci = () => {
       </section>
 
       <section>
-        <div className="grid justify-center justify-items-center grid-cols-1 md:grid-cols-4 gap-4 mt-10 p-5 m-10">
+        <div alt='slike mladenaca koji su svoje vještine plesa naučili uz naše stručnjake plesne igraonice Evushke' className="grid justify-center justify-items-center grid-cols-1 md:grid-cols-4 gap-4 mt-10 p-5 m-10">
           {[Mladenci4,Mladenci1, Mladenci2, Mladenci3].map((src, index) => (      
             <div key={index} onClick={() => handleImageClick(src)}>
               <img className="w-96 xl:h-5/6 h-auto rounded-lg cursor-pointer shadow-2xl shadow-lavender-500" src={src} alt={`Mladenci image ${index + 1}`} />
