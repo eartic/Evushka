@@ -72,29 +72,27 @@ const Rodendan = () => {
         </div>
       </section>
 
-      <div className="flex flex-col md:flex-row md:flex-wrap items-center justify-center space-x-0 md:space-x-8 space-y-8 md:space-y-0 mb-8 mt-10">
-        {data.rodendani.slice(0, 3).map((item, index) => (
+      <div className="flex flex-col md:flex-row md:flex-wrap items-center justify-center space-x-0 md:space-x-8 space-y-8 md:space-y-0 mb-8 mt-14">
+        {data.rodendani.slice(0, 7).map((item, index) => (
           <div key={index} className="flex flex-col items-center">
-            <h2 className='podnaslov'>{item.title}</h2>
-            <div className="shadow-2xl shadow-lavender-500 flex items-center justify-center text-center w-96 h-96 rounded-full border-8 border-magenta-500 bg-white">
-              <p className="p-8 ostatakTexta text-sm md:text-base" dangerouslySetInnerHTML={{ __html: item.description }} />
+            <h2 className='podnaslov mt-8'>{item.title}</h2>
+            <div className="mt-2 shadow-2xl shadow-lavender-500 flex items-center justify-center text-center w-[410px] h-[410px] rounded-full border-8 border-magenta-500 bg-white">
+              <p className="mt-2 text-center ostatakTexta text-sm md:text-base" dangerouslySetInnerHTML={{ __html: item.description }} />
             </div>
           </div>
         ))}
-        <div className="flex flex-col items-center md:flex-row md:items-start">
+       {/* <div className="flex flex-col items-center md:flex-row md:items-start">
           <div className="flex flex-col items-center xl:mt-7 mb-4 md:mb-0">
-            <h2 className='podnaslov'>{data.rodendani[3].title}</h2>
+            <h2 className='podnaslov'>{data.rodendani[7].title}</h2>
             <div className="shadow-2xl shadow-lavender-500 flex items-center justify-center text-center w-96 h-96 rounded-full border-8 border-magenta-500 bg-white xl:mr-96 md:ml-12 xl:mt-7">
               <p className="p-8 ostatakTexta text-sm md:text-base" dangerouslySetInnerHTML={{ __html: data.rodendani[3].description }} />
             </div>
-          </div>
-          <div className='flex justify-center items-center w-full h-auto py-3 xl:absolute xl:mr-14'>
-        <div className='w-3/4 sm:w-1/2 md:w-1/3 xs:h-5/6 mt-20 p-2'>
+          </div>*/}
+          <div className="w-10/12 lg:w-1/3 m-auto p-4 mt-10">
           <img src={Madionicar} alt="madionicar" className='w-full h-auto rounded-xl shadow-lg shadow-lavender-500' />
         </div>
         </div>
-        </div>
-      </div>
+        {/* </div>*/}
 
       <section className="flex justify-center justify-items-center mt-2">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-4 mt-10 p-3">

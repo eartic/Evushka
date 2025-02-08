@@ -1,20 +1,32 @@
 {
   "rodendani": [
     {
-      "title": "Osnovni paket",
-      "description": "Paket proslave obuhvaća:<br /><br />Najam i dekoraciju prostora<br />Dvije animatorice koje brinu za dobru zabavu<br />Pozivnice za rođendane<br />Grickalice, slatkiši i piće za djecu<br />Korištenje opreme igraonice<br />Čišćenje prostora<br />Disco program, disco light show<br />Rođendanski foto kutak<br />Max. broj djece: 20"
+      "title": "Najam prostora za proslave",
+      "description": "Najam cijelog prostora (120 m<sup>2</sup>)<br/>Igraonica pripremljena za proslavu <br/> Kuhinja sa svim posuđem <br/> WIFI <br/> Glazba po želji u svim prostorijama <br/> Grijani prostor (podno grijanje u igraonici)<br/> Max 30 odraslih osoba<br/>Kutak za fotografiranje <br/> Najam animatora po želji (14,00 €/h) <br/> Svaki dodatni sat 30,00 €/h <br/> 2h = 120,00€ <br/> 2,5h = 140,00€ <br/> 3h = 160,00€)"
     },
     {
-      "title": "Cjenik paketa",
-      "description": "Paket proslave 2 sata • 150€<br />Paket proslave 2,5 sata • 175€<br />Paket proslave 3 sata • 190€<br /> <br />Najam animatora • 14€ / po satu"
+      "title": "Osnovni paket (max. broj djece 10)",
+      "description": "Pozivnice<br/> Pribor i dekoracija za proslavu <br/>Disco program, disco light show <br/>Rođendanski foto kutak <br/> Slane i slatke grickalice <br/> Sokovi <br/> Ledo medo rođendanska torta <br/>Fotografiranje rođendana <br/> Poklončić za slavljenika <br/> Igre prilagođene uzrastu djece<br/> 1 animator koji se brine za dobru zabavu <br/> 2h = 170,00€ <br/> 2,5h = 195,00€ <br/> 3h = 210,00€)"
     },
     {
-      "title": "Proslave samo uz najam prostora:",
-      "description": "Najam prostora na 2 sata • 100€<br />Najam prostora na 2,5 sata • 120€<br />Najam prostora na 3 sata • 140€<br />Dodatni sat najma prostora • 30€/h<br /> <br />Kod najma prostora za proslavu rođendana čeka vas igraonica pripremljena za proslavu, a na vama je da organizirate zabavu i donesete vlastite grickalice i piće."
+      "title": "Osnovni paket (max. broj djece 20)",
+      "description": "Pozivnice<br/> Pribor i dekoracija za proslavu <br/>Disco program, disco light show <br/>Rođendanski foto kutak <br/> Slane i slatke grickalice <br/> Sokovi <br/> Ledo medo rođendanska torta <br/>Fotografiranje rođendana <br/> Poklončić za slavljenika <br/> Igre prilagođene uzrastu djece<br/> 2 animatora koji se brinu za dobru zabavu <br/> 2h = 190,00€ <br/> 2,5h = 215,00€ <br/> 3h = 230,00€)"
     },
     {
-      "title": "Mađioničarski paket 2h",
-      "description": "45 min s mađioničarem<br/>Vođeni rođendan<br/>2 animatora<br/>Sokovi i grickalice<br/>Dekoracija prostora<br/>Torta<br/>Disco program, disco light show<br/>Rođendanski foto kutak<br/>Max 20 djece<br/>•300€"
+      "title": "Ples sa zvijezdama (max. broj djece 10)",
+      "description": "Pozivnice<br/> Pribor i dekoracija za proslavu <br/>Disco program, disco light show <br/ > Rođendanski foto kutak <br/> Slane i slatke grickalice + sokovi <br/> Ledo medo rođendanska torta <br/> Fotografiranje rođendana <br/> Poklončić za slavljenika <br/> Latinoamerički ples po izboru <br/> 1 profesionalni plesač <br/> Zajednička koreografija <br/> Ples sa zvijezdama <br/ > 2h = 170,00€ <br/> 2,5h = 195,00€ <br/> 3h = 210,00€)"
+    },
+    {
+      "title": "Ples sa zvijezdama (max. broj djece 20)",
+      "description": "Pozivnice<br/> Pribor i dekoracija za proslavu <br/>Disco program, disco light show <br/ > Rođendanski foto kutak <br/> Slane i slatke grickalice + sokovi <br/> Ledo medo rođendanska torta <br/> Fotografiranje rođendana <br/> Poklončić za slavljenika <br/> Latinoamerički ples po izboru <br/> 2 profesionalna plesača <br/> Zajednička koreografija <br/> Ples sa zvijezdama <br/ > 2h = 190,00€ <br/> 2,5h = 215,00€ <br/> 3h = 230,00€)"
+    },
+    {
+      "title": "Paket za školarce (max. broj djece 20)",
+      "description": "Pozivnice<br/> Pribor i dekoracija za proslavu <br/> Rođendanski foto kutak <br/>  Fotografiranje rođendana <br/ > Poklončić za slavljenika <br/>Slane i slatke grickalice + sokovi <br/> Ledo medo torta <br/>2 sata zabave <br/>2 animatora<br/ >Zagonetke i izazovi koji se rješavaju u timovima<br/> Just dance<br/> 2h = 190,00€ <br/> 2,5h = 215,00€ <br/> 3h = 230,00€)"
+    },
+    {
+      "title": "Mađioničarski paket (max. broj djece 20)",
+      "description": "Pozivnice <br/> Pribor i dekoracija za proslavu <br/> Disco program, disco light show <br/> Rođendanski foto kutak <br/> Slane i slatke grickalice + sokovi <br/> Ledo medo rođendanska torta<br/> Fotografiranje rođendana<br/> Poklončić za slavljenika<br/> Igre prilagođene uzrastu djece <br/> 2 animatora koji se brinu za dobru zabavu<br/> Dolazak mađioničara (35 min)<br/> Poklon figurice od balona za svako dijete<br/> 2h = 250,00€<br/> 2,5h = 275,00€ <br/> 3h = 290,00€  "
     }
   ]
 }
