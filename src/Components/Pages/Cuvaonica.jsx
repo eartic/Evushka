@@ -28,10 +28,10 @@ const Cuvaonica = () => {
         <div className='w-5/6 sm:w-1/2 md:w-1/3 xs:h-5/6'>
           <img src={Djeca} alt="logo sa slikom djece Evushka" className='w-full h-auto' />
         </div>
+       
       </div>
-
-      <div className="flex flex-col">
-        <div className="grid grid-cols-1 md:grid-cols-1 xl:grid-cols-2 p-3  mt-4">
+      <div className="flex flex-auto justify-center">
+        <div className="grid gap-5 grid-cols-1 md:grid-cols-1 xl:grid-cols-2 p-3  mt-4">
           <div className="flex flex-col items-center">
             <h2 alt='radno vrijeme čuvaonice' className='podnaslov'>Kada?</h2>
             <div className="shadow-lg shadow-lavender-500 flex items-center justify-center text-center w-80 h-80 rounded-full border-8 border-magenta-500 bg-white">
@@ -72,6 +72,7 @@ const Cuvaonica = () => {
           </p>
         </div>
       </section>
+    
       <Footer />
     </>
   );
